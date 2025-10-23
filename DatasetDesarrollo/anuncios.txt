@@ -1,0 +1,54 @@
+# Formato: texto;categoria
+# Categorías: AAA (triple prioridad), B (doble prioridad), C (simple)
+# Máximo 500 caracteres por mensaje
+
+¿Aún no eres Premium? acceso anticipado a lanzamientos y acceso anticipado a lanzamientos.;AAA
+Descubre Premium: escucha sin conexión y saltar canciones sin límite.;C
+Descubre Premium: contenido exclusivo de artistas y sesiones privadas y entrevistas.;AAA
+Mejora tu experiencia: acceso anticipado a lanzamientos y escucha sin anuncios.;C
+Tu música sin límites: calidad de audio superior y acceso anticipado a lanzamientos.;C
+Mejora tu experiencia: calidad de audio superior y sesiones privadas y entrevistas.;C
+Pásate a Premium y saltar canciones sin límite y saltar canciones sin límite.;C
+Hazte Premium y escucha sin conexión y sesiones privadas y entrevistas.;AAA
+Tu música sin límites: acceso anticipado a lanzamientos y contenido exclusivo de artistas.;AAA
+Solo con Premium: escucha sin conexión y saltar canciones sin límite.;C
+Descubre Premium: sesiones privadas y entrevistas y reproducción sin interrupciones.;C
+Solo con Premium: reproducción sin interrupciones y descargas ilimitadas.;AAA
+Solo con Premium: saltar canciones sin límite y historial y listas ilimitadas.;B
+Solo con Premium: saltar canciones sin límite y contenido exclusivo de artistas.;C
+Premium te ofrece historial y listas ilimitadas y calidad de audio superior.;C
+Hazte Premium y saltar canciones sin límite y acceso anticipado a lanzamientos.;C
+Solo con Premium: reproducción sin interrupciones y acceso anticipado a lanzamientos.;B
+Con Premium puedes saltar canciones sin límite y calidad de audio superior.;C
+Mejora tu experiencia: saltar canciones sin límite y reproducción sin interrupciones.;B
+Solo con Premium: descargas ilimitadas y descargas ilimitadas.;B
+Con Premium puedes calidad de audio superior y saltar canciones sin límite.;AAA
+Con Premium puedes acceso anticipado a lanzamientos y saltar canciones sin límite.;AAA
+Pásate a Premium y escucha sin conexión y saltar canciones sin límite.;C
+Pásate a Premium y descargas ilimitadas y contenido exclusivo de artistas.;B
+No te quedes atrás: historial y listas ilimitadas y escucha sin anuncios.;C
+No te quedes atrás: historial y listas ilimitadas y escucha sin conexión.;B
+Con Premium puedes historial y listas ilimitadas y reproducción sin interrupciones.;C
+No te quedes atrás: saltar canciones sin límite y calidad de audio superior.;B
+Solo con Premium: saltar canciones sin límite y calidad de audio superior.;C
+Descubre Premium: escucha sin anuncios y saltar canciones sin límite.;AAA
+Mejora tu experiencia: historial y listas ilimitadas y acceso anticipado a lanzamientos.;AAA
+Tu música sin límites: sesiones privadas y entrevistas y sesiones privadas y entrevistas.;C
+Con Premium puedes acceso anticipado a lanzamientos y descargas ilimitadas.;C
+Hazte Premium y reproducción sin interrupciones y contenido exclusivo de artistas.;C
+Solo con Premium: contenido exclusivo de artistas y calidad de audio superior.;C
+Descubre Premium: historial y listas ilimitadas y historial y listas ilimitadas.;B
+Con Premium puedes descargas ilimitadas y reproducción sin interrupciones.;AAA
+Descubre Premium: escucha sin anuncios y descargas ilimitadas.;B
+Con Premium puedes calidad de audio superior y escucha sin anuncios.;B
+No te quedes atrás: descargas ilimitadas y reproducción sin interrupciones.;B
+Hazte Premium y descargas ilimitadas y saltar canciones sin límite.;C
+Descubre Premium: reproducción sin interrupciones y descargas ilimitadas.;C
+¿Aún no eres Premium? saltar canciones sin límite y contenido exclusivo de artistas.;C
+Premium te ofrece descargas ilimitadas y sesiones privadas y entrevistas.;C
+Con Premium puedes descargas ilimitadas y contenido exclusivo de artistas.;C
+Descubre Premium: contenido exclusivo de artistas y escucha sin anuncios.;B
+Mejora tu experiencia: sesiones privadas y entrevistas y acceso anticipado a lanzamientos.;B
+Pásate a Premium y descargas ilimitadas y acceso anticipado a lanzamientos.;C
+Con Premium puedes reproducción sin interrupciones y descargas ilimitadas.;B
+Hazte Premium y historial y listas ilimitadas y contenido exclusivo de artistas.;B

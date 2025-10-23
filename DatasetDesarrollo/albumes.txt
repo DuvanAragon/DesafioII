@@ -1,0 +1,310 @@
+# Formato: idArtista|idAlbum|nombre|sello|fechaLanzamiento|rutaPortada|puntuacion|generos(separados por coma)
+
+10000|1|Dreams|EMI|07/11/2021|/users/storage/music/juanes/image/dreams.png|5.8|Electronica,Pop
+10000|2|Revolution|Indie Records|17/11/2021|/users/storage/music/juanes/image/revolution.png|5.0|Musica Clasica
+10001|1|Sunrise|Colombian Music|10/03/1991|/users/storage/music/ozuna/image/sunrise.png|6.6|Electronica,Latina,Blues
+10002|1|Shadows|Warner Music|16/07/2023|/users/storage/music/elvis\ presley/image/shadows.png|5.7|Blues,Jazz,Reggae
+10002|2|Dawn|Warner Music|20/05/2002|/users/storage/music/elvis\ presley/image/dawn.png|5.7|Latina
+10002|3|Horizons|Warner Music|02/07/2016|/users/storage/music/elvis\ presley/image/horizons.png|7.2|Blues,Hip Hop,Pop,Musica Clasica
+10002|4|Revolution|EMI|20/10/1999|/users/storage/music/elvis\ presley/image/revolution.png|5.3|Pop,Reggae,Jazz,Musica Clasica
+10002|5|Revolution|Warner Music|28/01/1997|/users/storage/music/elvis\ presley/image/revolution.png|7.7|Pop,Musica Clasica,Latina
+10003|1|Dawn|Indie Records|26/09/2009|/users/storage/music/chopin/image/dawn.png|6.3|Jazz,Reggae,Latina,Musica Clasica
+10003|2|Colors|Sony Music|03/04/2019|/users/storage/music/chopin/image/colors.png|9.9|Electronica,Pop,Jazz
+10003|3|Sunrise|Sony Music|15/05/2015|/users/storage/music/chopin/image/sunrise.png|8.7|Jazz
+10003|4|Dusk|Colombian Music|27/01/1993|/users/storage/music/chopin/image/dusk.png|7.5|Pop,Jazz,Blues
+10004|1|Dreams|Sony Music|28/12/2014|/users/storage/music/the\ weeknd/image/dreams.png|6.6|Latina,Electronica
+10005|1|Reflections|Sony Music|02/03/2002|/users/storage/music/led\ zeppelin/image/reflections.png|5.8|Electronica,Blues,Pop
+10005|2|Greatest Hits|Indie Records|23/11/2006|/users/storage/music/led\ zeppelin/image/greatest\ hits.png|6.1|Reggae,Pop,Electronica,Hip Hop
+10006|1|Symphonic|EMI|15/09/1999|/users/storage/music/ed\ sheeran/image/symphonic.png|6.0|Blues,Reggae,Pop
+10006|2|Greatest Hits|Universal Music|16/09/2014|/users/storage/music/ed\ sheeran/image/greatest\ hits.png|8.0|Reggae
+10006|3|Anthology|Warner Music|04/04/1997|/users/storage/music/ed\ sheeran/image/anthology.png|9.6|Rock,Hip Hop,Latina,Reggae
+10006|4|Symphonic|Universal Music|05/12/2009|/users/storage/music/ed\ sheeran/image/symphonic.png|6.6|Hip Hop,Pop
+10006|5|Vol 2|Sony Music|05/12/2005|/users/storage/music/ed\ sheeran/image/vol\ 2.png|7.7|Electronica
+10007|1|Vol 3|Warner Music|19/02/2021|/users/storage/music/los\ cafres/image/vol\ 3.png|8.5|Blues,Electronica
+10008|1|Waves|Warner Music|10/04/2002|/users/storage/music/radiohead/image/waves.png|6.6|Latina,Blues
+10008|2|Journey|Latin Records|18/08/2016|/users/storage/music/radiohead/image/journey.png|7.6|Rock,Latina,Blues,Electronica
+10008|3|Lights|Colombian Music|02/05/1999|/users/storage/music/radiohead/image/lights.png|8.1|Pop,Musica Clasica,Blues
+10008|4|Intimate|Indie Records|06/02/2000|/users/storage/music/radiohead/image/intimate.png|8.8|Hip Hop,Pop,Reggae,Rock
+10009|1|Skylines|Colombian Music|08/10/2024|/users/storage/music/diplo/image/skylines.png|5.2|Reggae
+10009|2|Destiny|EMI|20/08/2002|/users/storage/music/diplo/image/destiny.png|5.2|Musica Clasica,Jazz
+10009|3|Live Concert|Universal Music|24/12/2006|/users/storage/music/diplo/image/live\ concert.png|9.9|Hip Hop,Musica Clasica
+10009|4|Transformation|Indie Records|07/11/1991|/users/storage/music/diplo/image/transformation.png|5.6|Electronica,Hip Hop,Reggae
+10009|5|Live Concert|EMI|28/08/2017|/users/storage/music/diplo/image/live\ concert.png|7.2|Pop,Blues
+10010|1|Intimate|Indie Records|07/12/2013|/users/storage/music/van\ halen/image/intimate.png|9.6|Reggae,Musica Clasica,Rock
+10010|2|Revolution|EMI|12/09/2013|/users/storage/music/van\ halen/image/revolution.png|6.9|Latina,Pop,Hip Hop
+10010|3|Revolution|Indie Records|21/11/2013|/users/storage/music/van\ halen/image/revolution.png|9.1|Musica Clasica,Jazz,Hip Hop
+10010|4|Vol 2|Latin Records|18/05/1994|/users/storage/music/van\ halen/image/vol\ 2.png|5.1|Reggae,Blues,Hip Hop,Musica Clasica
+10010|5|Chapter One|Latin Records|21/10/2017|/users/storage/music/van\ halen/image/chapter\ one.png|7.8|Pop,Reggae,Rock
+10011|1|Waves|Colombian Music|20/04/2011|/users/storage/music/chocquibtown/image/waves.png|6.0|Reggae,Electronica,Musica Clasica
+10011|2|Memories|EMI|02/07/2008|/users/storage/music/chocquibtown/image/memories.png|9.1|Rock,Pop
+10011|3|Memories|Indie Records|17/01/1996|/users/storage/music/chocquibtown/image/memories.png|8.5|Electronica,Jazz,Blues
+10011|4|Epic|Indie Records|08/12/2014|/users/storage/music/chocquibtown/image/epic.png|6.2|Latina
+10012|1|Waves|Latin Records|24/10/2011|/users/storage/music/the\ offspring/image/waves.png|5.7|Rock,Jazz,Hip Hop
+10013|1|Deluxe Edition|Universal Music|10/05/2010|/users/storage/music/nicky\ jam/image/deluxe\ edition.png|5.3|Jazz,Hip Hop
+10013|2|Intimate|Latin Records|04/01/2023|/users/storage/music/nicky\ jam/image/intimate.png|8.2|Electronica
+10013|3|Reflections|Warner Music|07/09/2005|/users/storage/music/nicky\ jam/image/reflections.png|8.5|Pop,Jazz
+10014|1|Reflections|EMI|23/10/2020|/users/storage/music/maluma/image/reflections.png|5.4|Musica Clasica
+10014|2|Horizons|Latin Records|13/08/2021|/users/storage/music/maluma/image/horizons.png|8.9|Hip Hop,Electronica
+10015|1|Acoustic|Latin Records|07/05/2020|/users/storage/music/ariana\ grande/image/acoustic.png|7.3|Latina,Hip Hop
+10015|2|Best Of|Universal Music|27/05/2004|/users/storage/music/ariana\ grande/image/best\ of.png|6.7|Rock,Musica Clasica,Electronica
+10015|3|Debut|Warner Music|20/06/1997|/users/storage/music/ariana\ grande/image/debut.png|9.3|Blues,Pop
+10015|4|Journey|Indie Records|21/06/2013|/users/storage/music/ariana\ grande/image/journey.png|8.6|Blues
+10016|1|Midnight|Sony Music|21/09/2018|/users/storage/music/heroes\ del\ silencio/image/midnight.png|8.3|Electronica,Rock,Hip Hop,Jazz
+10016|2|Anthology|Latin Records|10/09/2013|/users/storage/music/heroes\ del\ silencio/image/anthology.png|5.8|Blues,Hip Hop,Electronica
+10016|3|Classics|Latin Records|07/06/2013|/users/storage/music/heroes\ del\ silencio/image/classics.png|9.0|Jazz
+10016|4|Classics|Colombian Music|15/07/2010|/users/storage/music/heroes\ del\ silencio/image/classics.png|9.0|Hip Hop,Blues
+10016|5|Electric|Latin Records|13/06/2009|/users/storage/music/heroes\ del\ silencio/image/electric.png|8.9|Reggae
+10017|1|Dawn|Indie Records|13/08/1994|/users/storage/music/mozart/image/dawn.png|8.9|Rock
+10017|2|Transformation|Latin Records|06/11/2008|/users/storage/music/mozart/image/transformation.png|6.8|Jazz,Hip Hop
+10017|3|Vol 2|Warner Music|18/12/2018|/users/storage/music/mozart/image/vol\ 2.png|7.1|Blues,Rock
+10018|1|Remastered|Warner Music|18/11/2002|/users/storage/music/bomba\ estereo/image/remastered.png|7.1|Pop,Rock
+10018|2|Debut|EMI|23/05/2023|/users/storage/music/bomba\ estereo/image/debut.png|7.4|Electronica,Pop,Jazz,Blues
+10019|1|Vol 1|EMI|03/06/1992|/users/storage/music/shakira/image/vol\ 1.png|7.2|Hip Hop,Electronica,Rock
+10019|2|Chapter One|Indie Records|16/01/2007|/users/storage/music/shakira/image/chapter\ one.png|5.8|Musica Clasica,Rock,Pop
+10019|3|Midnight|Latin Records|13/08/2007|/users/storage/music/shakira/image/midnight.png|5.3|Blues
+10019|4|Debut|Universal Music|21/06/2018|/users/storage/music/shakira/image/debut.png|8.1|Rock
+10020|1|Dawn|EMI|08/03/1992|/users/storage/music/johnny\ cash/image/dawn.png|8.6|Rock,Jazz,Blues
+10020|2|Symphonic|Universal Music|06/07/2002|/users/storage/music/johnny\ cash/image/symphonic.png|8.8|Blues,Rock,Hip Hop,Reggae
+10020|3|Skylines|Universal Music|02/08/2019|/users/storage/music/johnny\ cash/image/skylines.png|6.8|Blues
+10020|4|Remastered|Colombian Music|07/11/2023|/users/storage/music/johnny\ cash/image/remastered.png|9.4|Reggae
+10020|5|Midnight|Universal Music|25/10/2002|/users/storage/music/johnny\ cash/image/midnight.png|5.3|Hip Hop,Jazz
+10021|1|Electric|Sony Music|19/09/2010|/users/storage/music/blink\ 182/image/electric.png|5.6|Rock,Blues,Jazz
+10021|2|Vol 3|Warner Music|01/07/1995|/users/storage/music/blink\ 182/image/vol\ 3.png|6.4|Pop
+10021|3|Live Concert|Sony Music|11/06/1995|/users/storage/music/blink\ 182/image/live\ concert.png|8.5|Reggae
+10021|4|Colors|Colombian Music|20/10/2021|/users/storage/music/blink\ 182/image/colors.png|8.2|Jazz,Pop,Blues
+10022|1|Epic|Indie Records|18/01/2011|/users/storage/music/slayer/image/epic.png|6.6|Musica Clasica,Electronica,Blues,Rock
+10023|1|Epic|Colombian Music|16/09/1991|/users/storage/music/bob\ dylan/image/epic.png|6.0|Jazz,Pop,Latina,Hip Hop
+10023|2|Sunrise|Warner Music|06/12/2016|/users/storage/music/bob\ dylan/image/sunrise.png|9.1|Blues
+10023|3|Chapter Two|EMI|19/09/2006|/users/storage/music/bob\ dylan/image/chapter\ two.png|7.7|Reggae,Musica Clasica
+10023|4|The Collection|Indie Records|11/09/2024|/users/storage/music/bob\ dylan/image/the\ collection.png|5.8|Musica Clasica,Reggae
+10024|1|Shadows|Sony Music|14/02/2001|/users/storage/music/david\ guetta/image/shadows.png|8.7|Electronica,Latina,Pop,Jazz
+10025|1|The Collection|Universal Music|02/05/1997|/users/storage/music/bob\ marley/image/the\ collection.png|7.0|Musica Clasica,Reggae,Electronica,Pop
+10025|2|Colors|Colombian Music|03/02/2010|/users/storage/music/bob\ marley/image/colors.png|7.5|Musica Clasica
+10025|3|Journey|Indie Records|04/02/2024|/users/storage/music/bob\ marley/image/journey.png|7.6|Electronica,Musica Clasica
+10025|4|Horizons|Indie Records|25/03/2021|/users/storage/music/bob\ marley/image/horizons.png|6.8|Electronica,Blues,Pop,Latina
+10026|1|Deluxe Edition|Colombian Music|24/12/2000|/users/storage/music/david\ bowie/image/deluxe\ edition.png|5.0|Jazz,Electronica,Blues
+10026|2|Journey|Universal Music|26/04/2000|/users/storage/music/david\ bowie/image/journey.png|7.0|Latina,Hip Hop
+10027|1|Debut|Latin Records|06/01/1996|/users/storage/music/avicii/image/debut.png|8.9|Jazz,Electronica
+10027|2|Anthology|Sony Music|08/12/1995|/users/storage/music/avicii/image/anthology.png|5.6|Latina,Hip Hop
+10028|1|Transformation|Sony Music|20/04/2015|/users/storage/music/don\ omar/image/transformation.png|6.5|Musica Clasica
+10029|1|Horizons|Sony Music|04/11/2006|/users/storage/music/metallica/image/horizons.png|9.4|Musica Clasica,Pop
+10029|2|Epic|Indie Records|26/01/2020|/users/storage/music/metallica/image/epic.png|8.0|Jazz,Hip Hop,Latina
+10029|3|Sunrise|Colombian Music|04/12/2008|/users/storage/music/metallica/image/sunrise.png|10.0|Latina,Reggae,Blues
+10029|4|Dawn|Sony Music|19/07/1998|/users/storage/music/metallica/image/dawn.png|10.0|Rock,Latina,Musica Clasica,Blues
+10030|1|Chapter One|Sony Music|12/02/2009|/users/storage/music/tiesto/image/chapter\ one.png|6.1|Pop
+10030|2|Memories|Warner Music|15/03/1996|/users/storage/music/tiesto/image/memories.png|8.6|Reggae,Pop,Rock,Jazz
+10030|3|Live Concert|Sony Music|10/02/2015|/users/storage/music/tiesto/image/live\ concert.png|8.3|Pop,Blues,Jazz,Rock
+10030|4|Midnight|Sony Music|18/05/2005|/users/storage/music/tiesto/image/midnight.png|5.8|Rock,Reggae,Latina,Blues
+10031|1|Greatest Hits|Sony Music|12/12/1998|/users/storage/music/the\ rolling\ stones/image/greatest\ hits.png|5.3|Reggae,Jazz,Rock
+10031|2|Journey|Universal Music|23/12/2011|/users/storage/music/the\ rolling\ stones/image/journey.png|7.4|Reggae,Musica Clasica,Latina,Electronica
+10032|1|Echoes|Indie Records|13/06/2008|/users/storage/music/coldplay/image/echoes.png|9.5|Latina,Blues,Musica Clasica
+10033|1|Classics|EMI|06/06/1999|/users/storage/music/eminem/image/classics.png|9.4|Pop
+10033|2|Chapter Two|Latin Records|20/12/1994|/users/storage/music/eminem/image/chapter\ two.png|6.1|Latina
+10033|3|Echoes|Colombian Music|11/02/2001|/users/storage/music/eminem/image/echoes.png|9.8|Jazz,Hip Hop,Musica Clasica,Reggae
+10034|1|Acoustic|Universal Music|16/03/1993|/users/storage/music/megadeth/image/acoustic.png|8.1|Blues,Electronica
+10035|1|Electric|Sony Music|09/09/2003|/users/storage/music/daft\ punk/image/electric.png|7.1|Musica Clasica,Blues
+10035|2|Best Of|Sony Music|09/09/2010|/users/storage/music/daft\ punk/image/best\ of.png|9.4|Jazz,Hip Hop
+10035|3|Anthology|Indie Records|22/12/2002|/users/storage/music/daft\ punk/image/anthology.png|6.0|Electronica,Pop
+10036|1|Sunrise|Indie Records|21/04/2019|/users/storage/music/notorious\ big/image/sunrise.png|7.0|Electronica,Latina,Musica Clasica
+10036|2|Skylines|EMI|19/04/2024|/users/storage/music/notorious\ big/image/skylines.png|6.2|Electronica,Reggae
+10036|3|Dawn|Latin Records|26/06/2023|/users/storage/music/notorious\ big/image/dawn.png|6.8|Pop,Musica Clasica,Rock,Hip Hop
+10036|4|Chapter Two|Sony Music|25/11/2010|/users/storage/music/notorious\ big/image/chapter\ two.png|7.2|Electronica,Hip Hop
+10037|1|Remastered|EMI|24/12/2010|/users/storage/music/fonseca/image/remastered.png|6.9|Pop
+10037|2|Remastered|Latin Records|05/03/1993|/users/storage/music/fonseca/image/remastered.png|8.8|Latina,Rock,Electronica,Pop
+10037|3|Deluxe Edition|Warner Music|13/05/1999|/users/storage/music/fonseca/image/deluxe\ edition.png|8.3|Blues,Hip Hop
+10038|1|Dusk|EMI|08/01/2001|/users/storage/music/madonna/image/dusk.png|7.4|Blues,Hip Hop
+10038|2|Vol 2|Warner Music|12/12/2001|/users/storage/music/madonna/image/vol\ 2.png|9.4|Hip Hop,Musica Clasica
+10038|3|Unplugged|Warner Music|25/09/2010|/users/storage/music/madonna/image/unplugged.png|6.2|Jazz
+10038|4|Debut|Universal Music|10/08/1994|/users/storage/music/madonna/image/debut.png|5.9|Musica Clasica,Rock
+10039|1|Echoes|Universal Music|21/06/2022|/users/storage/music/tupac/image/echoes.png|8.3|Jazz,Musica Clasica,Rock,Reggae
+10040|1|Debut|Warner Music|17/03/1992|/users/storage/music/aerosmith/image/debut.png|8.8|Musica Clasica
+10041|1|Revolution|Universal Music|17/10/2009|/users/storage/music/kiss/image/revolution.png|6.1|Rock,Blues
+10041|2|Remastered|Sony Music|03/05/2002|/users/storage/music/kiss/image/remastered.png|6.9|Hip Hop,Jazz
+10042|1|Evolution|Latin Records|02/08/2017|/users/storage/music/ella\ fitzgerald/image/evolution.png|6.5|Musica Clasica,Hip Hop,Rock,Reggae
+10043|1|Memories|Universal Music|16/10/2009|/users/storage/music/bruno\ mars/image/memories.png|5.0|Hip Hop
+10043|2|Sunset|Warner Music|09/07/1993|/users/storage/music/bruno\ mars/image/sunset.png|9.7|Latina,Electronica,Hip Hop,Reggae
+10043|3|Colors|Latin Records|26/04/2003|/users/storage/music/bruno\ mars/image/colors.png|9.5|Electronica,Rock,Hip Hop,Latina
+10043|4|Acoustic|Indie Records|23/10/2008|/users/storage/music/bruno\ mars/image/acoustic.png|5.8|Rock,Pop,Jazz,Musica Clasica
+10044|1|Destiny|EMI|11/04/2005|/users/storage/music/marshmello/image/destiny.png|5.6|Blues,Jazz,Electronica
+10044|2|Vol 3|Latin Records|06/09/2016|/users/storage/music/marshmello/image/vol\ 3.png|8.8|Pop,Jazz,Hip Hop
+10044|3|Debut|Colombian Music|26/10/2014|/users/storage/music/marshmello/image/debut.png|8.2|Electronica,Blues,Musica Clasica
+10044|4|Acoustic|Sony Music|16/07/2023|/users/storage/music/marshmello/image/acoustic.png|5.6|Rock
+10044|5|Vol 2|Indie Records|25/06/2003|/users/storage/music/marshmello/image/vol\ 2.png|7.1|Reggae,Blues,Latina
+10045|1|Chapter Two|Colombian Music|17/02/2019|/users/storage/music/martin\ garrix/image/chapter\ two.png|6.7|Rock,Jazz,Musica Clasica,Pop
+10045|2|Chapter Two|Universal Music|27/02/2007|/users/storage/music/martin\ garrix/image/chapter\ two.png|7.7|Rock,Electronica,Blues
+10046|1|Dawn|Sony Music|18/09/1994|/users/storage/music/miles\ davis/image/dawn.png|9.8|Blues,Latina,Musica Clasica
+10046|2|Echoes|Colombian Music|17/03/2022|/users/storage/music/miles\ davis/image/echoes.png|8.8|Jazz,Latina
+10046|3|Skylines|Indie Records|28/05/1995|/users/storage/music/miles\ davis/image/skylines.png|9.8|Electronica
+10046|4|Greatest Hits|Sony Music|07/12/2003|/users/storage/music/miles\ davis/image/greatest\ hits.png|7.5|Pop,Electronica,Hip Hop,Musica Clasica
+10047|1|Dreams|Sony Music|13/08/1999|/users/storage/music/jay-z/image/dreams.png|9.7|Blues
+10047|2|Intimate|Colombian Music|21/11/2008|/users/storage/music/jay-z/image/intimate.png|6.7|Musica Clasica,Hip Hop,Blues
+10047|3|Revolution|Colombian Music|01/07/2012|/users/storage/music/jay-z/image/revolution.png|7.0|Blues
+10047|4|Midnight|EMI|02/04/2010|/users/storage/music/jay-z/image/midnight.png|9.2|Blues
+10048|1|Sunrise|Indie Records|09/02/2021|/users/storage/music/taylor\ swift/image/sunrise.png|5.1|Blues,Rock
+10048|2|The Collection|Warner Music|15/04/1995|/users/storage/music/taylor\ swift/image/the\ collection.png|6.9|Electronica,Rock
+10048|3|Sunrise|Latin Records|10/06/2010|/users/storage/music/taylor\ swift/image/sunrise.png|7.4|Blues
+10048|4|Reflections|Warner Music|23/01/2009|/users/storage/music/taylor\ swift/image/reflections.png|8.9|Latina,Reggae,Pop
+10048|5|Evolution|EMI|17/10/1999|/users/storage/music/taylor\ swift/image/evolution.png|9.8|Electronica
+10049|1|Destiny|Latin Records|18/11/2008|/users/storage/music/calvin\ harris/image/destiny.png|9.4|Jazz,Musica Clasica
+10049|2|Transformation|Latin Records|24/05/2011|/users/storage/music/calvin\ harris/image/transformation.png|5.3|Musica Clasica,Pop
+10050|1|Symphonic|Warner Music|22/01/2017|/users/storage/music/morat/image/symphonic.png|8.0|Electronica
+10050|2|Midnight|Universal Music|17/03/2019|/users/storage/music/morat/image/midnight.png|8.7|Jazz,Hip Hop,Blues
+10050|3|Intimate|Sony Music|13/08/1997|/users/storage/music/morat/image/intimate.png|9.7|Blues,Hip Hop
+10050|4|Horizons|Colombian Music|04/01/1993|/users/storage/music/morat/image/horizons.png|6.5|Latina,Blues,Musica Clasica
+10050|5|Dawn|Indie Records|20/08/2020|/users/storage/music/morat/image/dawn.png|8.2|Pop
+10051|1|Electric|Indie Records|21/04/2008|/users/storage/music/alice\ in\ chains/image/electric.png|8.1|Hip Hop,Reggae
+10051|2|Unplugged|Colombian Music|18/07/1998|/users/storage/music/alice\ in\ chains/image/unplugged.png|7.9|Musica Clasica,Blues,Jazz
+10052|1|Shadows|Universal Music|28/09/1991|/users/storage/music/zedd/image/shadows.png|8.4|Blues,Hip Hop,Pop
+10052|2|Greatest Hits|Indie Records|27/07/1994|/users/storage/music/zedd/image/greatest\ hits.png|8.2|Rock,Electronica,Pop,Jazz
+10052|3|Shadows|EMI|15/11/2012|/users/storage/music/zedd/image/shadows.png|6.8|Musica Clasica,Hip Hop,Pop,Jazz
+10053|1|The Collection|Sony Music|21/01/1995|/users/storage/music/u2/image/the\ collection.png|7.7|Rock,Electronica,Latina,Musica Clasica
+10053|2|Midnight|Sony Music|01/12/1996|/users/storage/music/u2/image/midnight.png|9.8|Latina,Electronica,Jazz
+10054|1|Acoustic|Latin Records|11/07/2022|/users/storage/music/kendrick\ lamar/image/acoustic.png|9.9|Electronica,Latina
+10055|1|Classics|Indie Records|20/09/1990|/users/storage/music/kygo/image/classics.png|9.0|Electronica
+10055|2|Classics|Warner Music|18/12/1994|/users/storage/music/kygo/image/classics.png|6.8|Reggae,Electronica,Hip Hop,Pop
+10055|3|Journey|Universal Music|26/10/1998|/users/storage/music/kygo/image/journey.png|6.1|Rock,Musica Clasica,Pop,Reggae
+10055|4|Transformation|Universal Music|03/01/2009|/users/storage/music/kygo/image/transformation.png|9.6|Reggae,Latina
+10056|1|Vol 3|Universal Music|20/06/2009|/users/storage/music/daddy\ yankee/image/vol\ 3.png|7.9|Reggae,Pop,Rock,Musica Clasica
+10056|2|Epic|Latin Records|20/02/2000|/users/storage/music/daddy\ yankee/image/epic.png|9.0|Blues
+10057|1|Skylines|EMI|23/10/2007|/users/storage/music/green\ day/image/skylines.png|7.3|Hip Hop,Electronica
+10057|2|Symphonic|EMI|25/01/1998|/users/storage/music/green\ day/image/symphonic.png|9.6|Electronica,Reggae
+10057|3|Anthology|EMI|18/10/2009|/users/storage/music/green\ day/image/anthology.png|9.5|Blues,Latina,Hip Hop
+10057|4|Lights|Warner Music|15/03/1996|/users/storage/music/green\ day/image/lights.png|9.2|Jazz,Musica Clasica,Rock,Electronica
+10058|1|Remastered|Warner Music|10/09/1990|/users/storage/music/linkin\ park/image/remastered.png|7.3|Latina,Pop,Hip Hop,Musica Clasica
+10058|2|Memories|Sony Music|17/03/2022|/users/storage/music/linkin\ park/image/memories.png|6.0|Latina,Electronica
+10058|3|Chapter One|EMI|24/09/1999|/users/storage/music/linkin\ park/image/chapter\ one.png|5.9|Jazz,Pop
+10058|4|Evolution|Warner Music|03/07/2000|/users/storage/music/linkin\ park/image/evolution.png|5.6|Electronica
+10059|1|Classics|Latin Records|24/12/2016|/users/storage/music/nirvana/image/classics.png|8.5|Electronica
+10059|2|Shadows|Colombian Music|02/12/2016|/users/storage/music/nirvana/image/shadows.png|7.4|Hip Hop,Reggae
+10060|1|Lights|Colombian Music|23/01/1997|/users/storage/music/arcangel/image/lights.png|5.2|Pop,Blues
+10060|2|Skylines|Universal Music|10/03/2000|/users/storage/music/arcangel/image/skylines.png|9.5|Electronica,Musica Clasica,Rock,Pop
+10060|3|Colors|Universal Music|04/12/2021|/users/storage/music/arcangel/image/colors.png|8.2|Latina,Rock,Pop
+10061|1|Epic|Latin Records|03/06/2004|/users/storage/music/soda\ stereo/image/epic.png|9.9|Blues,Hip Hop
+10062|1|Remastered|EMI|22/10/2018|/users/storage/music/beyonce/image/remastered.png|5.8|Hip Hop,Rock,Latina
+10062|2|Unplugged|EMI|16/09/2014|/users/storage/music/beyonce/image/unplugged.png|5.9|Electronica
+10062|3|Best Of|Warner Music|09/07/2006|/users/storage/music/beyonce/image/best\ of.png|9.4|Blues,Rock,Latina
+10062|4|Chapter One|Latin Records|12/08/2016|/users/storage/music/beyonce/image/chapter\ one.png|9.0|Reggae,Hip Hop,Rock,Latina
+10062|5|Evolution|Colombian Music|23/11/2004|/users/storage/music/beyonce/image/evolution.png|8.0|Latina,Reggae,Musica Clasica
+10063|1|Revolution|Latin Records|04/01/2007|/users/storage/music/black\ sabbath/image/revolution.png|6.4|Rock
+10063|2|Transformation|Universal Music|07/05/2004|/users/storage/music/black\ sabbath/image/transformation.png|8.9|Hip Hop
+10064|1|Revolution|Colombian Music|16/11/2011|/users/storage/music/j\ balvin/image/revolution.png|6.6|Pop,Hip Hop,Jazz
+10064|2|Destiny|EMI|16/03/2009|/users/storage/music/j\ balvin/image/destiny.png|8.7|Reggae
+10064|3|Classics|Indie Records|17/04/2011|/users/storage/music/j\ balvin/image/classics.png|8.3|Blues,Rock,Hip Hop,Electronica
+10064|4|Chapter Two|EMI|15/01/1994|/users/storage/music/j\ balvin/image/chapter\ two.png|6.1|Musica Clasica,Rock,Blues,Jazz
+10064|5|Midnight|Indie Records|28/01/2022|/users/storage/music/j\ balvin/image/midnight.png|6.6|Latina,Jazz,Pop,Rock
+10065|1|Dreams|Sony Music|26/05/2019|/users/storage/music/karol\ g/image/dreams.png|9.1|Electronica
+10065|2|Dreams|Warner Music|10/08/2007|/users/storage/music/karol\ g/image/dreams.png|5.5|Blues,Jazz
+10065|3|Reflections|Universal Music|20/02/2017|/users/storage/music/karol\ g/image/reflections.png|7.9|Hip Hop
+10065|4|Anthology|Colombian Music|22/06/1993|/users/storage/music/karol\ g/image/anthology.png|6.7|Electronica
+10066|1|Evolution|Warner Music|15/05/1990|/users/storage/music/soundgarden/image/evolution.png|6.4|Hip Hop,Pop,Musica Clasica
+10066|2|Electric|Universal Music|27/11/1990|/users/storage/music/soundgarden/image/electric.png|7.6|Latina,Electronica,Musica Clasica
+10066|3|Evolution|Sony Music|23/09/2020|/users/storage/music/soundgarden/image/evolution.png|6.4|Jazz,Reggae
+10066|4|Shadows|EMI|12/11/1998|/users/storage/music/soundgarden/image/shadows.png|8.6|Latina,Hip Hop
+10067|1|Destiny|Colombian Music|17/12/2015|/users/storage/music/prince/image/destiny.png|5.0|Pop,Musica Clasica,Electronica,Reggae
+10067|2|Horizons|EMI|22/08/1995|/users/storage/music/prince/image/horizons.png|9.1|Reggae,Hip Hop
+10067|3|Destiny|Universal Music|28/08/2017|/users/storage/music/prince/image/destiny.png|8.1|Rock,Musica Clasica,Reggae,Electronica
+10067|4|Acoustic|Colombian Music|06/05/2002|/users/storage/music/prince/image/acoustic.png|5.4|Reggae
+10067|5|Memories|Warner Music|09/07/1997|/users/storage/music/prince/image/memories.png|5.5|Electronica,Hip Hop
+10068|1|Colors|Warner Music|13/06/2003|/users/storage/music/bach/image/colors.png|5.9|Electronica
+10068|2|Vol 3|Latin Records|21/11/2005|/users/storage/music/bach/image/vol\ 3.png|9.6|Blues
+10069|1|Live Concert|Universal Music|10/05/1998|/users/storage/music/piso\ 21/image/live\ concert.png|7.2|Musica Clasica,Rock
+10069|2|Deluxe Edition|Latin Records|28/08/2021|/users/storage/music/piso\ 21/image/deluxe\ edition.png|9.6|Musica Clasica,Blues,Jazz
+10069|3|Dawn|Indie Records|05/08/2002|/users/storage/music/piso\ 21/image/dawn.png|6.3|Electronica
+10069|4|Echoes|Sony Music|10/05/1990|/users/storage/music/piso\ 21/image/echoes.png|5.8|Musica Clasica
+10070|1|Greatest Hits|Indie Records|07/01/2004|/users/storage/music/vivaldi/image/greatest\ hits.png|5.4|Musica Clasica,Blues
+10070|2|Dawn|Universal Music|02/04/2014|/users/storage/music/vivaldi/image/dawn.png|9.6|Rock,Pop,Musica Clasica,Reggae
+10070|3|Dusk|Universal Music|10/12/1994|/users/storage/music/vivaldi/image/dusk.png|7.5|Reggae,Electronica,Jazz
+10070|4|Journey|Latin Records|22/01/1992|/users/storage/music/vivaldi/image/journey.png|7.6|Reggae,Musica Clasica,Latina,Rock
+10070|5|Echoes|Universal Music|27/09/1994|/users/storage/music/vivaldi/image/echoes.png|7.2|Electronica
+10071|1|Vol 2|Sony Music|18/09/1997|/users/storage/music/bad\ bunny/image/vol\ 2.png|9.4|Rock,Musica Clasica,Electronica,Latina
+10071|2|Journey|Indie Records|09/06/2009|/users/storage/music/bad\ bunny/image/journey.png|8.5|Blues,Latina,Jazz,Musica Clasica
+10071|3|Acoustic|Warner Music|28/12/2008|/users/storage/music/bad\ bunny/image/acoustic.png|9.3|Rock,Latina,Pop,Reggae
+10072|1|Dusk|Colombian Music|26/04/2005|/users/storage/music/ac/dc/image/dusk.png|7.2|Jazz,Reggae,Electronica,Rock
+10072|2|Greatest Hits|Latin Records|12/05/2011|/users/storage/music/ac/dc/image/greatest\ hits.png|9.9|Latina,Blues
+10072|3|Unplugged|Indie Records|06/08/2016|/users/storage/music/ac/dc/image/unplugged.png|8.0|Hip Hop,Reggae,Latina,Jazz
+10072|4|Waves|Sony Music|13/12/1990|/users/storage/music/ac/dc/image/waves.png|7.0|Latina,Reggae,Blues
+10072|5|Midnight|Sony Music|04/03/1992|/users/storage/music/ac/dc/image/midnight.png|7.8|Blues
+10073|1|Journey|EMI|22/06/2008|/users/storage/music/kanye\ west/image/journey.png|9.7|Electronica,Musica Clasica
+10073|2|Acoustic|Colombian Music|11/09/2022|/users/storage/music/kanye\ west/image/acoustic.png|7.7|Rock,Reggae
+10073|3|Greatest Hits|Latin Records|08/01/1993|/users/storage/music/kanye\ west/image/greatest\ hits.png|6.2|Hip Hop,Pop,Blues,Rock
+10073|4|Lights|Latin Records|01/06/1999|/users/storage/music/kanye\ west/image/lights.png|9.4|Reggae,Latina,Pop,Rock
+10074|1|Intimate|Warner Music|02/09/1995|/users/storage/music/iron\ maiden/image/intimate.png|9.2|Musica Clasica
+10075|1|Horizons|Universal Music|09/07/1992|/users/storage/music/frank\ sinatra/image/horizons.png|5.9|Hip Hop
+10075|2|Evolution|Sony Music|03/10/2008|/users/storage/music/frank\ sinatra/image/evolution.png|6.5|Rock,Jazz,Musica Clasica,Blues
+10075|3|Dusk|Indie Records|23/12/1993|/users/storage/music/frank\ sinatra/image/dusk.png|6.0|Musica Clasica
+10075|4|Vol 1|Universal Music|13/01/2009|/users/storage/music/frank\ sinatra/image/vol\ 1.png|8.2|Musica Clasica,Hip Hop,Latina,Electronica
+10076|1|Colors|Universal Music|02/09/2002|/users/storage/music/louis\ armstrong/image/colors.png|7.9|Hip Hop,Rock,Latina
+10076|2|Chapter Two|Latin Records|11/04/2015|/users/storage/music/louis\ armstrong/image/chapter\ two.png|8.6|Electronica,Latina
+10076|3|Electric|Latin Records|10/04/2006|/users/storage/music/louis\ armstrong/image/electric.png|5.2|Musica Clasica,Blues,Pop,Hip Hop
+10076|4|Skylines|Indie Records|08/12/2011|/users/storage/music/louis\ armstrong/image/skylines.png|7.5|Electronica
+10077|1|Revolution|EMI|14/12/2019|/users/storage/music/john\ coltrane/image/revolution.png|10.0|Pop,Jazz,Blues,Musica Clasica
+10077|2|Journey|Indie Records|20/01/2001|/users/storage/music/john\ coltrane/image/journey.png|8.1|Rock,Blues
+10077|3|Dawn|Colombian Music|04/09/2012|/users/storage/music/john\ coltrane/image/dawn.png|9.0|Pop,Jazz,Electronica,Latina
+10077|4|Electric|Warner Music|17/04/2019|/users/storage/music/john\ coltrane/image/electric.png|6.6|Latina,Jazz
+10078|1|Dreams|Latin Records|15/02/2018|/users/storage/music/sum\ 41/image/dreams.png|5.7|Rock,Reggae
+10078|2|Transformation|Colombian Music|14/03/2005|/users/storage/music/sum\ 41/image/transformation.png|10.0|Latina
+10078|3|Intimate|Indie Records|01/02/2010|/users/storage/music/sum\ 41/image/intimate.png|7.9|Jazz
+10079|1|Remastered|Universal Music|15/02/2015|/users/storage/music/bruce\ springsteen/image/remastered.png|7.3|Pop,Blues,Electronica
+10080|1|Waves|Indie Records|26/10/2024|/users/storage/music/michael\ jackson/image/waves.png|5.8|Hip Hop,Jazz
+10080|2|The Collection|Sony Music|23/09/1994|/users/storage/music/michael\ jackson/image/the\ collection.png|8.8|Rock,Hip Hop
+10080|3|Dusk|Colombian Music|07/07/1998|/users/storage/music/michael\ jackson/image/dusk.png|7.8|Jazz,Rock
+10080|4|Dreams|Latin Records|19/10/2013|/users/storage/music/michael\ jackson/image/dreams.png|7.9|Electronica
+10081|1|Chapter One|Sony Music|24/10/1995|/users/storage/music/feid/image/chapter\ one.png|9.9|Electronica,Jazz,Blues
+10082|1|Intimate|Warner Music|03/04/2002|/users/storage/music/drake/image/intimate.png|6.4|Blues,Latina,Musica Clasica,Reggae
+10082|2|Electric|Colombian Music|28/06/2001|/users/storage/music/drake/image/electric.png|8.1|Hip Hop
+10082|3|Intimate|Warner Music|28/01/1991|/users/storage/music/drake/image/intimate.png|9.8|Rock
+10082|4|Horizons|Colombian Music|17/03/2018|/users/storage/music/drake/image/horizons.png|5.7|Musica Clasica
+10083|1|Midnight|Warner Music|07/05/2015|/users/storage/music/guns\ n\ roses/image/midnight.png|9.4|Latina
+10084|1|Horizons|Colombian Music|19/05/1991|/users/storage/music/pearl\ jam/image/horizons.png|9.7|Electronica,Musica Clasica,Blues
+10085|1|Dreams|Warner Music|16/09/2006|/users/storage/music/carlos\ vives/image/dreams.png|6.3|Reggae,Musica Clasica,Jazz
+10085|2|Dusk|EMI|01/02/2007|/users/storage/music/carlos\ vives/image/dusk.png|7.8|Hip Hop,Latina,Blues,Reggae
+10086|1|Dawn|Sony Music|01/07/2018|/users/storage/music/red\ hot\ chili\ peppers/image/dawn.png|9.4|Musica Clasica,Pop
+10086|2|The Collection|Warner Music|14/03/2018|/users/storage/music/red\ hot\ chili\ peppers/image/the\ collection.png|6.9|Pop,Blues
+10086|3|Chapter One|Colombian Music|23/04/2022|/users/storage/music/red\ hot\ chili\ peppers/image/chapter\ one.png|9.3|Musica Clasica
+10087|1|Dreams|Latin Records|15/04/2015|/users/storage/music/queen/image/dreams.png|7.5|Electronica
+10087|2|Skylines|EMI|02/03/2020|/users/storage/music/queen/image/skylines.png|7.2|Blues,Jazz,Pop,Reggae
+10087|3|Classics|Indie Records|14/12/2004|/users/storage/music/queen/image/classics.png|5.1|Blues,Hip Hop,Pop
+10087|4|Symphonic|Indie Records|03/12/1990|/users/storage/music/queen/image/symphonic.png|8.0|Pop,Hip Hop
+10087|5|Electric|Universal Music|19/09/2013|/users/storage/music/queen/image/electric.png|9.5|Electronica,Blues,Reggae,Hip Hop
+10088|1|Best Of|Sony Music|18/04/2010|/users/storage/music/pink\ floyd/image/best\ of.png|6.4|Latina
+10088|2|Remastered|Colombian Music|12/12/1998|/users/storage/music/pink\ floyd/image/remastered.png|8.1|Hip Hop
+10088|3|Dreams|EMI|13/02/2019|/users/storage/music/pink\ floyd/image/dreams.png|8.8|Pop,Latina
+10088|4|Chapter Two|Universal Music|12/07/1996|/users/storage/music/pink\ floyd/image/chapter\ two.png|5.2|Rock
+10089|1|Classics|Warner Music|20/01/1998|/users/storage/music/camilo/image/classics.png|7.8|Latina,Rock
+10089|2|Unplugged|Warner Music|12/05/2020|/users/storage/music/camilo/image/unplugged.png|8.7|Blues,Latina,Jazz
+10089|3|Colors|Latin Records|20/07/1999|/users/storage/music/camilo/image/colors.png|8.7|Electronica,Jazz,Reggae,Hip Hop
+10089|4|Deluxe Edition|EMI|06/01/2001|/users/storage/music/camilo/image/deluxe\ edition.png|9.0|Musica Clasica,Latina
+10089|5|Unplugged|EMI|18/02/2002|/users/storage/music/camilo/image/unplugged.png|9.8|Electronica,Rock
+10090|1|The Collection|Sony Music|19/04/2017|/users/storage/music/aterciopelados/image/the\ collection.png|5.9|Blues,Jazz
+10090|2|Transformation|Latin Records|08/12/2016|/users/storage/music/aterciopelados/image/transformation.png|8.9|Blues,Hip Hop
+10090|3|Skylines|Colombian Music|26/02/1997|/users/storage/music/aterciopelados/image/skylines.png|6.1|Latina,Reggae,Musica Clasica
+10090|4|Skylines|Warner Music|06/03/2022|/users/storage/music/aterciopelados/image/skylines.png|6.4|Musica Clasica,Latina
+10091|1|The Collection|Universal Music|12/11/2002|/users/storage/music/systema\ solar/image/the\ collection.png|6.6|Jazz
+10092|1|Destiny|Colombian Music|24/02/1995|/users/storage/music/duke\ ellington/image/destiny.png|6.1|Pop
+10092|2|Epic|Sony Music|14/07/2002|/users/storage/music/duke\ ellington/image/epic.png|5.8|Electronica,Pop,Rock
+10093|1|Midnight|Warner Music|18/02/1998|/users/storage/music/beethoven/image/midnight.png|5.7|Rock
+10093|2|Vol 2|Universal Music|18/05/2005|/users/storage/music/beethoven/image/vol\ 2.png|5.8|Electronica
+10093|3|Skylines|EMI|05/11/1994|/users/storage/music/beethoven/image/skylines.png|7.3|Reggae,Blues,Rock
+10094|1|Skylines|Latin Records|23/12/2019|/users/storage/music/wisin\ y\ yandel/image/skylines.png|7.9|Latina
+10094|2|Chapter Two|Warner Music|15/03/2000|/users/storage/music/wisin\ y\ yandel/image/chapter\ two.png|5.6|Latina,Electronica,Reggae
+10094|3|Lights|Universal Music|04/06/2000|/users/storage/music/wisin\ y\ yandel/image/lights.png|8.5|Jazz
+10095|1|Vol 1|Warner Music|20/03/2008|/users/storage/music/manuel\ turizo/image/vol\ 1.png|9.8|Latina,Jazz,Blues,Pop
+10095|2|Debut|EMI|03/04/2002|/users/storage/music/manuel\ turizo/image/debut.png|7.9|Pop,Electronica
+10095|3|Shadows|Sony Music|18/01/2000|/users/storage/music/manuel\ turizo/image/shadows.png|5.7|Latina,Blues,Rock
+10095|4|Midnight|Indie Records|11/12/1999|/users/storage/music/manuel\ turizo/image/midnight.png|9.2|Pop
+10095|5|Dreams|Colombian Music|14/02/2024|/users/storage/music/manuel\ turizo/image/dreams.png|9.1|Pop,Musica Clasica
+10096|1|Transformation|Sony Music|07/01/2024|/users/storage/music/stone\ temple\ pilots/image/transformation.png|9.8|Electronica,Jazz
+10096|2|Shadows|Sony Music|18/11/1998|/users/storage/music/stone\ temple\ pilots/image/shadows.png|8.4|Blues,Pop
+10096|3|Shadows|Sony Music|14/09/1994|/users/storage/music/stone\ temple\ pilots/image/shadows.png|7.6|Hip Hop,Latina,Musica Clasica,Reggae
+10096|4|Classics|Indie Records|23/12/1997|/users/storage/music/stone\ temple\ pilots/image/classics.png|7.3|Rock
+10097|1|Waves|Sony Music|28/02/1995|/users/storage/music/sebastian\ yatra/image/waves.png|6.4|Musica Clasica,Jazz,Reggae,Rock
+10097|2|Chapter Two|Sony Music|08/07/2022|/users/storage/music/sebastian\ yatra/image/chapter\ two.png|9.4|Hip Hop
+10097|3|Symphonic|Latin Records|23/04/2003|/users/storage/music/sebastian\ yatra/image/symphonic.png|5.8|Musica Clasica,Electronica
+10097|4|Transformation|Indie Records|05/05/2014|/users/storage/music/sebastian\ yatra/image/transformation.png|5.8|Latina
+10097|5|The Collection|Latin Records|02/10/2005|/users/storage/music/sebastian\ yatra/image/the\ collection.png|9.4|Blues,Electronica,Pop,Hip Hop
+10098|1|Transformation|Latin Records|12/10/1999|/users/storage/music/deep\ purple/image/transformation.png|7.0|Jazz
+10098|2|Skylines|Warner Music|18/08/2005|/users/storage/music/deep\ purple/image/skylines.png|6.2|Electronica,Reggae,Jazz,Musica Clasica
+10098|3|Live Concert|EMI|03/04/1998|/users/storage/music/deep\ purple/image/live\ concert.png|5.4|Latina,Rock,Pop
+10098|4|Shadows|EMI|26/03/2020|/users/storage/music/deep\ purple/image/shadows.png|6.4|Reggae
+10099|1|Vol 1|Colombian Music|15/02/2008|/users/storage/music/the\ beatles/image/vol\ 1.png|6.5|Electronica,Hip Hop,Musica Clasica,Blues
+10099|2|Chapter One|Latin Records|14/06/2016|/users/storage/music/the\ beatles/image/chapter\ one.png|7.3|Latina,Rock

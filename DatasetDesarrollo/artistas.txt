@@ -1,0 +1,103 @@
+# Formato: idArtista|nombre|edad|paisOrigen|seguidores|posicionGlobal
+# idArtista: 5 dígitos (10000-99999)
+
+10000|Juanes|65|UK|3286372|1
+10001|Ozuna|60|Colombia|1185834|2
+10002|Elvis Presley|30|USA|2665225|3
+10003|Chopin|40|Peru|991243|4
+10004|The Weeknd|45|Peru|8905841|5
+10005|Led Zeppelin|42|Venezuela|6574307|6
+10006|Ed Sheeran|31|España|3799190|7
+10007|Los Cafres|29|Brasil|4793876|8
+10008|Radiohead|60|Peru|2239408|9
+10009|Diplo|51|España|7604978|10
+10010|Van Halen|38|USA|5089230|11
+10011|ChocQuibTown|51|Argentina|1069251|12
+10012|The Offspring|38|Chile|3254521|13
+10013|Nicky Jam|40|UK|910012|14
+10014|Maluma|26|Brasil|5633206|15
+10015|Ariana Grande|28|Brasil|8418750|16
+10016|Heroes del Silencio|34|Chile|8269928|17
+10017|Mozart|63|Venezuela|7926119|18
+10018|Bomba Estereo|18|Chile|93443|19
+10019|Shakira|60|Chile|7961|20
+10020|Johnny Cash|65|España|6888236|21
+10021|Blink 182|26|Mexico|1371879|22
+10022|Slayer|43|Chile|2950368|23
+10023|Bob Dylan|34|Mexico|4866725|24
+10024|David Guetta|54|Colombia|9717507|25
+10025|Bob Marley|42|Mexico|9546440|26
+10026|David Bowie|52|Brasil|9976442|27
+10027|Avicii|24|USA|6959619|28
+10028|Don Omar|31|España|5427111|29
+10029|Metallica|56|USA|9475579|30
+10030|Tiesto|26|Peru|1672945|31
+10031|The Rolling Stones|54|España|161173|32
+10032|Coldplay|32|Brasil|2901476|33
+10033|Eminem|47|Argentina|3618022|34
+10034|Megadeth|65|UK|8172659|35
+10035|Daft Punk|30|Chile|229511|36
+10036|Notorious BIG|45|Mexico|3443114|37
+10037|Fonseca|57|UK|7346567|38
+10038|Madonna|63|Colombia|3256636|39
+10039|Tupac|59|Venezuela|7466951|40
+10040|Aerosmith|53|Argentina|9809913|41
+10041|Kiss|50|Chile|2127636|42
+10042|Ella Fitzgerald|62|España|7028874|43
+10043|Bruno Mars|64|España|804034|44
+10044|Marshmello|26|Peru|4358000|45
+10045|Martin Garrix|38|Peru|4504031|46
+10046|Miles Davis|33|Venezuela|2805916|47
+10047|Jay-Z|26|Brasil|3709594|48
+10048|Taylor Swift|65|Venezuela|2048013|49
+10049|Calvin Harris|54|USA|591791|50
+10050|Morat|40|Chile|686446|51
+10051|Alice in Chains|51|Colombia|64993|52
+10052|Zedd|19|Peru|9927755|53
+10053|U2|55|Colombia|8923771|54
+10054|Kendrick Lamar|26|Chile|1338969|55
+10055|Kygo|40|Argentina|1330474|56
+10056|Daddy Yankee|49|USA|2149193|57
+10057|Green Day|46|Chile|7632539|58
+10058|Linkin Park|28|Venezuela|4720063|59
+10059|Nirvana|29|USA|8651288|60
+10060|Arcangel|25|España|5716437|61
+10061|Soda Stereo|19|Chile|6481860|62
+10062|Beyonce|63|Brasil|896768|63
+10063|Black Sabbath|33|Peru|6825980|64
+10064|J Balvin|51|Mexico|5816256|65
+10065|Karol G|44|Chile|8056241|66
+10066|Soundgarden|42|Argentina|877408|67
+10067|Prince|44|UK|7793817|68
+10068|Bach|54|Colombia|9041772|69
+10069|Piso 21|55|Colombia|9410265|70
+10070|Vivaldi|65|Chile|6379053|71
+10071|Bad Bunny|60|Argentina|5773298|72
+10072|AC/DC|22|UK|773957|73
+10073|Kanye West|43|Brasil|7914416|74
+10074|Iron Maiden|58|Argentina|121529|75
+10075|Frank Sinatra|19|Mexico|5304481|76
+10076|Louis Armstrong|36|Brasil|1572161|77
+10077|John Coltrane|24|Venezuela|7558052|78
+10078|Sum 41|63|Peru|4098013|79
+10079|Bruce Springsteen|31|Peru|5338239|80
+10080|Michael Jackson|63|España|3244548|81
+10081|Feid|32|Colombia|5182993|82
+10082|Drake|47|Brasil|9266341|83
+10083|Guns N Roses|56|Brasil|7403680|84
+10084|Pearl Jam|53|Brasil|1355378|85
+10085|Carlos Vives|34|USA|9858520|86
+10086|Red Hot Chili Peppers|29|Chile|190077|87
+10087|Queen|46|España|2035491|88
+10088|Pink Floyd|62|Peru|2265775|89
+10089|Camilo|45|Mexico|9970689|90
+10090|Aterciopelados|35|Venezuela|7798393|91
+10091|Systema Solar|32|Chile|7347509|92
+10092|Duke Ellington|31|Venezuela|7542564|93
+10093|Beethoven|32|Venezuela|6925839|94
+10094|Wisin y Yandel|35|Venezuela|1437863|95
+10095|Manuel Turizo|28|UK|2004706|96
+10096|Stone Temple Pilots|27|Chile|4653932|97
+10097|Sebastian Yatra|38|Argentina|4254479|98
+10098|Deep Purple|61|USA|2005337|99
+10099|The Beatles|19|Mexico|5618509|100

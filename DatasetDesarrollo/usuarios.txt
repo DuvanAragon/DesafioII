@@ -1,0 +1,23 @@
+# Formato: nickname|tipoMembresia|ciudad|pais|fechaRegistro
+# tipoMembresia: premium o estandar
+
+musical_lover|estandar|Pereira|Colombia|02/12/2021
+rockstar99|estandar|Pereira|Colombia|25/11/2024
+jazzfan|estandar|Cali|Colombia|06/05/2022
+popsinger|estandar|Bucaramanga|Colombia|21/05/2023
+metalhead|premium|Cartagena|Colombia|18/02/2023
+salsero123|estandar|Medellin|Colombia|04/04/2022
+reggaeton_king|premium|Bucaramanga|Colombia|14/07/2020
+classical_mind|estandar|Bogota|Colombia|14/02/2022
+hiphop_soul|premium|Manizales|Colombia|13/03/2022
+indie_vibes|premium|Cartagena|Colombia|22/10/2020
+electro_beats|premium|Bucaramanga|Colombia|22/01/2024
+country_road|estandar|Pereira|Colombia|10/07/2020
+blues_brother|estandar|Medellin|Colombia|18/06/2024
+latin_fire|premium|Pereira|Colombia|04/08/2022
+disco_fever|premium|Pereira|Colombia|04/01/2022
+techno_master|premium|Cali|Colombia|21/08/2024
+acoustic_life|estandar|Bogota|Colombia|08/04/2021
+vinyl_collector|estandar|Barranquilla|Colombia|23/10/2021
+concert_goer|estandar|Pereira|Colombia|27/09/2020
+melody_maker|premium|Medellin|Colombia|14/12/2020
