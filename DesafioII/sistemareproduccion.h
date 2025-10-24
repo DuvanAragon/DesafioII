@@ -1,14 +1,15 @@
-#ifndef SISTEMAREPRODUCCION_H
-#define SISTEMAREPRODUCCION_H
+#ifndef SISTEMA_REPRODUCCION_H
+#define SISTEMA_REPRODUCCION_H
 
 #include "Cancion.h"
-// Forward declaration para evitar dependencias circulares
+
+// Forward declarations para evitar dependencias circulares
 class Usuario;
 class Anuncio;
 
 /*
- * Clase SistemaReproduccion: Gestiona la reproduccion de canciones
- * Controla historial, repeticion y publicidad
+ * Clase SistemaReproduccion: Gestiona la reproducción de canciones
+ * Controla historial, repetición y publicidad
  */
 class SistemaReproduccion {
 private:
@@ -30,6 +31,7 @@ public:
     Usuario* getUsuarioActivo() const;
     bool getEstaRepitiendo() const;
     int getContadorCanciones() const;
+    int getCantidadHistorial() const;
 
     // Setters
     void setCancionActual(Cancion* cancion);
@@ -44,7 +46,7 @@ public:
     Cancion* anterior();
     bool puedeRetroceder(int maxRetroceso) const;
 
-    // Gestión de historial
+    // Gestion de historial
     void agregarAlHistorial(Cancion* cancion);
     void limpiarHistorial();
 

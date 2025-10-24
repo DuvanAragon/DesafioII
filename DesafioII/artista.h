@@ -1,20 +1,18 @@
 #ifndef ARTISTA_H
 #define ARTISTA_H
 
-#include <string>
 #include "Album.h"
-using namespace std;
 
 /*
  * Clase Artista: Representa un artista musical
- * Gestiona su catalogo de albumes y datos personales
+ * Gestiona su catálogo de albumes y datos personales
  */
 class Artista {
 private:
     int idArtista; // 5 digitos
-    string nombre;
+    char* nombre;
     int edad;
-    string paisOrigen;
+    char* paisOrigen;
     int seguidores;
     int posicionGlobal;
 
@@ -25,16 +23,16 @@ private:
 public:
     // Constructores
     Artista();
-    Artista(int id, const string& nombre, int edad, const string& pais,
+    Artista(int id, const char* nombre, int edad, const char* pais,
             int seguidores, int posicion);
     Artista(const Artista& otro); // Constructor de copia
     ~Artista(); // Destructor
 
     // Getters
     int getIdArtista() const;
-    string getNombre() const;
+    const char* getNombre() const;
     int getEdad() const;
-    string getPaisOrigen() const;
+    const char* getPaisOrigen() const;
     int getSeguidores() const;
     int getPosicionGlobal() const;
     Album** getAlbumes() const;
@@ -42,9 +40,9 @@ public:
 
     // Setters
     void setIdArtista(int id);
-    void setNombre(const string& nombre);
+    void setNombre(const char* nombre);
     void setEdad(int edad);
-    void setPaisOrigen(const string& pais);
+    void setPaisOrigen(const char* pais);
     void setSeguidores(int seguidores);
     void setPosicionGlobal(int posicion);
     void setAlbumes(Album** albumes, int cantidad);
@@ -61,6 +59,11 @@ private:
     void expandirCapacidadAlbumes();
     void copiarAlbumes(Album** origen, int cantidad);
     void liberarAlbumes();
+
+    // Funciones auxiliares para manejo de cadenas
+    char* copiarCadena(const char* origen);
+    void liberarCadena(char*& cadena);
+    int longitudCadena(const char* cadena) const;
 };
 
 #endif

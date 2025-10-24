@@ -1,7 +1,8 @@
-#include "sistemareproduccion.h"
+#include "SistemaReproduccion.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+using namespace std;
 
 // Constructor
 SistemaReproduccion::SistemaReproduccion()
@@ -21,6 +22,7 @@ Cancion* SistemaReproduccion::getCancionActual() const { return cancionActual; }
 Usuario* SistemaReproduccion::getUsuarioActivo() const { return usuarioActivo; }
 bool SistemaReproduccion::getEstaRepitiendo() const { return estaRepitiendo; }
 int SistemaReproduccion::getContadorCanciones() const { return contadorCanciones; }
+int SistemaReproduccion::getCantidadHistorial() const { return cantidadHistorial; }
 
 // Setters
 void SistemaReproduccion::setCancionActual(Cancion* cancion) {
@@ -35,7 +37,7 @@ void SistemaReproduccion::setEstaRepitiendo(bool repitiendo) {
     this->estaRepitiendo = repitiendo;
 }
 
-// Reproducir canción
+// Reproducir cancionn
 void SistemaReproduccion::reproducir(Cancion* cancion) {
     if (cancion == nullptr) {
         cout << "Error: No hay cancion para reproducir" << endl;
@@ -45,7 +47,7 @@ void SistemaReproduccion::reproducir(Cancion* cancion) {
     cancionActual = cancion;
     cancion->incrementarReproduccion();
 
-    // Agregar al historial solo si no está en modo repetir
+    // Agregar al historial solo si no esta en modo repetir
     if (!estaRepitiendo) {
         agregarAlHistorial(cancion);
         contadorCanciones++;
@@ -79,7 +81,7 @@ Cancion* SistemaReproduccion::siguiente(Cancion** canciones, int total) {
 // Cancion anterior
 Cancion* SistemaReproduccion::anterior() {
     if (cantidadHistorial < 2) {
-        cout << "No hay canción anterior" << endl;
+        cout << "No hay cancion anterior" << endl;
         return nullptr;
     }
 
@@ -92,7 +94,7 @@ bool SistemaReproduccion::puedeRetroceder(int maxRetroceso) const {
     return cantidadHistorial > 1 && (cantidadHistorial - 1) <= maxRetroceso;
 }
 
-// Agregar cancion al historial
+// Agregar cancionn al historial
 void SistemaReproduccion::agregarAlHistorial(Cancion* cancion) {
     if (cantidadHistorial >= capacidadHistorial) {
         expandirCapacidadHistorial();
