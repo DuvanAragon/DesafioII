@@ -1,5 +1,3 @@
-# Formato: idArtista|idAlbum|nombre|sello|fechaLanzamiento|rutaPortada|puntuacion|generos(separados por coma)
-
 10000|1|Dreams|EMI|07/11/2021|/users/storage/music/juanes/image/dreams.png|5.8|Electronica,Pop
 10000|2|Revolution|Indie Records|17/11/2021|/users/storage/music/juanes/image/revolution.png|5.0|Musica Clasica
 10001|1|Sunrise|Colombian Music|10/03/1991|/users/storage/music/ozuna/image/sunrise.png|6.6|Electronica,Latina,Blues

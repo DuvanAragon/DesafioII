@@ -1,6 +1,3 @@
-# Formato: idArtista|nombre|edad|paisOrigen|seguidores|posicionGlobal
-# idArtista: 5 dígitos (10000-99999)
-
 10000|Juanes|65|UK|3286372|1
 10001|Ozuna|60|Colombia|1185834|2
 10002|Elvis Presley|30|USA|2665225|3

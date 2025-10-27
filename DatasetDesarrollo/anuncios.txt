@@ -1,7 +1,3 @@
-# Formato: texto;categoria
-# Categorías: AAA (triple prioridad), B (doble prioridad), C (simple)
-# Máximo 500 caracteres por mensaje
-
 ¿Aún no eres Premium? acceso anticipado a lanzamientos y acceso anticipado a lanzamientos.;AAA
 Descubre Premium: escucha sin conexión y saltar canciones sin límite.;C
 Descubre Premium: contenido exclusivo de artistas y sesiones privadas y entrevistas.;AAA

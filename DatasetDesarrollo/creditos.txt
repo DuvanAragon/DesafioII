@@ -1,6 +1,3 @@
-# Formato: idCancion|nombre|apellido|tipo|codigoAfiliacion
-# tipo: Productor, Musico, Compositor
-
 100000101|Alberto|Reyes|Compositor|LPSZDXSFS7
 100000101|Diego|Morales|Productor|VNMWMW94PJ
 100000102|Diego|Flores|Productor|5LAJFJWQB0

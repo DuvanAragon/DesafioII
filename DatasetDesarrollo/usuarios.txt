@@ -1,6 +1,3 @@
-# Formato: nickname|tipoMembresia|ciudad|pais|fechaRegistro
-# tipoMembresia: premium o estandar
-
 musical_lover|estandar|Pereira|Colombia|02/12/2021
 rockstar99|estandar|Pereira|Colombia|25/11/2024
 jazzfan|estandar|Cali|Colombia|06/05/2022

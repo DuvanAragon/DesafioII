@@ -26,3 +26,6 @@ void Credito::mostrarCredito() const {
     cout << tipo << ": " << nombre << " " << apellido
          << " (Código: " << codigoAfiliacion << ")" << endl;
 }
+
+void Credito::setIdCancion(int id) { idCancion = id; }
+int Credito::getIdCancion() const { return idCancion; }

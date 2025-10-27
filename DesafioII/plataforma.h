@@ -1,88 +1,130 @@
 #ifndef PLATAFORMA_H
 #define PLATAFORMA_H
 
-#include "Artista.h"
-#include "SistemaReproduccion.h"
+#include <iostream>
+#include <fstream>
 #include <string>
+#include <random>
 
-// Forward declarations
-class Usuario;
-class Anuncio;
-class MedidorRecursos;
+#include "cancion.h"
+#include "credito.h"
+#include "album.h"
+#include "artista.h"
+#include "Usuario.h"
+#include "Anuncios.h"
+using namespace std;
 
-/*
- * Clase Plataforma: Clase central que coordina todo el sistema
- * Gestiona usuarios, artistas, anuncios y reproduccion
- */
 class Plataforma {
 private:
-    Usuario** usuarios;
-    Artista** artistas;
-    Anuncio** anuncios;
-    SistemaReproduccion* sistemaReproduccion;
-    MedidorRecursos* medidor;
+    // ====== CANCIONES (INDEXADAS) ======
+    int* idsCanciones;
+    string* lineasCanciones;
+    int cantidadCanciones;
+    int capacidadCanciones;
 
-    int cantidadUsuarios;
-    int capacidadUsuarios;
+    // ====== CREDITOS (INDEXADOS) ======
+    int* idCancionesCred;
+    string* lineasCreditos;
+    int cantidadCreditos;
+    int capacidadCreditos;
+
+    // ====== ALBUMES (INDEXADOS) ======
+    int* idArtistas;
+    int* idAlbumes;
+    string* lineasAlbumes;
+    int cantidadAlbumes;
+    int capacidadAlbumes;
+
+    // ====== ARTISTAS (CARGA COMPLETA) ======
+    Artista** artistas;
     int cantidadArtistas;
     int capacidadArtistas;
+
+    // ====== USUARIOS (CARGA COMPLETA) ======
+    Usuario** usuarios;
+    int cantidadUsuarios;
+    int capacidadUsuarios;
+
+    // ====== ANUNCIOS (CARGA COMPLETA) ======
+    Anuncio** anuncios;
     int cantidadAnuncios;
     int capacidadAnuncios;
 
-    Usuario* usuarioActual; // Usuario con sesion iniciada
+    // Métodos auxiliares para parsear
+    Cancion* parsearCancion(const string& linea);
+    Credito* parsearCredito(const string& linea);
+    Album* parsearAlbum(const string& linea);
+
 
 public:
-    // Constructores
     Plataforma();
     ~Plataforma();
 
-    // Getters
-    Usuario** getUsuarios() const;
-    Artista** getArtistas() const;
-    Anuncio** getAnuncios() const;
-    SistemaReproduccion* getSistemaReproduccion() const;
-    MedidorRecursos* getMedidor() const;
-    int getCantidadUsuarios() const;
-    int getCantidadArtistas() const;
-    int getCantidadAnuncios() const;
-    Usuario* getUsuarioActual() const;
+    // ==== MÉTODOS CANCIONES ====
+    void indexarCanciones(const string& ruta);
+    Cancion* cargarCancion(int id);
+    int getCantidadCanciones() { return cantidadCanciones; }
 
-    // Setters
-    void setUsuarios(Usuario** usuarios, int cantidad);
-    void setArtistas(Artista** artistas, int cantidad);
-    void setAnuncios(Anuncio** anuncios, int cantidad);
+    // ==== MÉTODOS CREDITOS ====
+    void indexarCreditos(const string& ruta);
+    Credito* cargarCredito(int idCancion);
+    int getCantidadCreditos() { return cantidadCreditos; }
 
-    // Gestion de datos
-    void cargarDatos();
-    void guardarDatos();
+    // ==== MÉTODOS ALBUMES ====
+    void indexarAlbumes(const string& ruta);
+    Album* cargarAlbum(int idArtista, int idAlbum);
+    int getCantidadAlbumes() { return cantidadAlbumes; }
 
-    // Funcionalidades principales
-    Usuario* login(const string& nickname);
-    void reproducirAleatorio();
-    void medirRecursos(const string& funcionalidad);
+    // ==== MÉTODOS ARTISTAS ====
+    void cargarArtistas(const string& ruta);
+    Artista* buscarArtista(int idArtista);
+    int getCantidadArtistas() { return cantidadArtistas; }
 
-    // Busquedas
-    Usuario* encontrarUsuario(const string& nickname) const;
-    Cancion* encontrarCancion(int id) const;
-    Cancion** obtenerTodasLasCanciones(int& totalCanciones) const;
+    // ==== MÉTODOS USUARIOS ====
+    void cargarUsuarios(const string& ruta);
+    Usuario* buscarUsuario(const string& nickname);
+    int getCantidadUsuarios() { return cantidadUsuarios; }
 
-    // Sobrecarga de operador
-    bool operator==(const Plataforma& otra) const;
+    // ==== MÉTODOS ANUNCIOS ====
+    void cargarAnuncios(const string& ruta);
+    Anuncio* obtenerAnuncioAleatorio(int ultimoIndice);
+    int getCantidadAnuncios() { return cantidadAnuncios; }
+    Anuncio* getAnuncio(int i) { return (i >= 0 && i < cantidadAnuncios) ? anuncios[i] : nullptr; }
 
-    // Metodos auxiliares
-    void agregarUsuario(Usuario* usuario);
+    // ==== MÉTODOS PERSISTENCIA LISTAS ====
+    void cargarListasFavoritosDesdeArchivo(const string& ruta);
+    void guardarListasFavoritosEnArchivo(const string& ruta);
+
+    // En la sección public de la clase Plataforma:
+
+    // ==== MÉTODOS DE GUARDADO ====
+    void guardarCanciones(const string& ruta);
+    void guardarCreditos(const string& ruta);
+    void guardarAlbumes(const string& ruta);
+    void guardarArtistas(const string& ruta);
+    void guardarUsuarios(const string& ruta);
+    void guardarAnuncios(const string& ruta);
+
+    // ==== MÉTODOS DE ACTUALIZACIÓN (para datos indexados) ====
+    void actualizarLineaCancion(int idCancion);
+    void actualizarLineaCredito(int idCancion);
+    void actualizarLineaAlbum(int idArtista, int idAlbum);
+
+    // ==== MÉTODOS DE AGREGADO ====
+    void agregarCancion(Cancion* cancion);
+    void agregarAlbum(int idArtista, Album* album);
     void agregarArtista(Artista* artista);
-    void agregarAnuncio(Anuncio* anuncio);
+    void agregarUsuario(Usuario* usuario);
 
-private:
-    void expandirCapacidadUsuarios();
-    void expandirCapacidadArtistas();
-    void expandirCapacidadAnuncios();
+    // ==== MÉTODOS DE ELIMINACIÓN ====
+    bool eliminarCancion(int idCancion);
+    bool eliminarArtista(int idArtista);
+    bool eliminarUsuario(const string& nickname);
 
-    // Metodos de carga de datos
-    void cargarArtistas();
-    void cargarUsuarios();
-    void cargarAnuncios();
+    // ==== MÉTODO DE LOGIN ====
+    Usuario* login(const string& nickname);
+    Cancion* seleccionarCancionAleatoria(int ultimoID = -1);
+
 };
 
 #endif

@@ -1,6 +1,3 @@
-# Formato: idCancion|nombre|duracion|ruta128|ruta320|reproducciones
-# idCancion: 9 dígitos = idArtista(5) + idAlbum(2) + idCancion(2)
-
 100000101|Verso 898|249.2|/users/storage/music/juanes/audio/verso\ 898_128.ogg|/users/storage/music/juanes/audio/verso\ 898_320.ogg|122747
 100000102|Montaña 16|196.3|/users/storage/music/juanes/audio/montaña\ 16_128.ogg|/users/storage/music/juanes/audio/montaña\ 16_320.ogg|271446
 100000103|Baila Conmigo 980|238.3|/users/storage/music/juanes/audio/baila\ conmigo\ 980_128.ogg|/users/storage/music/juanes/audio/baila\ conmigo\ 980_320.ogg|225658
