@@ -1,7 +1,12 @@
 #include "Usuario.h"
+#include "ListaFavoritos.h"
+#include "Cancion.h"
+#include "SistemaReproduccion.h"
 #include <iostream>
+
 using namespace std;
 
+// Constructores y destructor
 Usuario::Usuario() {
     nickname = "";
     tipoMembresia = "estandar";
@@ -40,12 +45,9 @@ void Usuario::setPais(string _pais) { pais = _pais; }
 void Usuario::setFechaRegistro(string _fecha) { fechaRegistro = _fecha; }
 void Usuario::setListaFavoritos(ListaFavoritos* _lista) { listaFavoritos = _lista; }
 
+// Métodos funcionales
 bool Usuario::Premium() {
     return tipoMembresia == "premium";
-}
-
-bool Usuario::operator==(Usuario& otro) {
-    return nickname == otro.nickname;
 }
 
 void Usuario::seguirLista(Usuario* usuarioASeguir) {
@@ -53,7 +55,6 @@ void Usuario::seguirLista(Usuario* usuarioASeguir) {
         cout << "Solo usuarios premium pueden seguir listas." << endl;
         return;
     }
-
     listaFavoritos->seguirLista(usuarioASeguir->getListaFavoritos());
 }
 

@@ -3,32 +3,39 @@
 
 #include "Album.h"
 
-/*
- * Clase Artista: Representa un artista musical
- * Gestiona su catálogo de albumes y datos personales
- */
 class Artista {
 private:
-    int idArtista; // 5 digitos
+    // datos personales
+    int idArtista;
     char* nombre;
     int edad;
     char* paisOrigen;
     int seguidores;
     int posicionGlobal;
 
-    Album** albumes; // Arreglo dinamico de albumes
+    // gestión de álbumes
+    Album** albumes;
     int cantidadAlbumes;
     int capacidadAlbumes;
 
+    void expandirCapacidadAlbumes();
+    void copiarAlbumes(Album** origen, int cantidad);
+    void liberarAlbumes();
+
+    // gestión de cadenas
+    char* copiarCadena(const char* origen);
+    void liberarCadena(char*& cadena);
+    int longitudCadena(const char* cadena) const;
+
 public:
-    // Constructores
+    // constructores y destructor
     Artista();
     Artista(int id, const char* nombre, int edad, const char* pais,
             int seguidores, int posicion);
-    Artista(const Artista& otro); // Constructor de copia
-    ~Artista(); // Destructor
+    Artista(const Artista& otro);
+    ~Artista();
 
-    // Getters
+    // getters
     int getIdArtista() const;
     const char* getNombre() const;
     int getEdad() const;
@@ -38,7 +45,7 @@ public:
     Album** getAlbumes() const;
     int getCantidadAlbumes() const;
 
-    // Setters
+    // setters
     void setIdArtista(int id);
     void setNombre(const char* nombre);
     void setEdad(int edad);
@@ -47,23 +54,13 @@ public:
     void setPosicionGlobal(int posicion);
     void setAlbumes(Album** albumes, int cantidad);
 
-    // Metodos funcionales
+    // métodos funcionales
     void agregarAlbum(Album* album);
     void mostrarInformacion() const;
     Cancion* buscarCancionPorId(int idCancion) const;
 
-    // Sobrecarga de operador
+    // operador
     Artista& operator=(const Artista& otro);
-
-private:
-    void expandirCapacidadAlbumes();
-    void copiarAlbumes(Album** origen, int cantidad);
-    void liberarAlbumes();
-
-    // Funciones auxiliares para manejo de cadenas
-    char* copiarCadena(const char* origen);
-    void liberarCadena(char*& cadena);
-    int longitudCadena(const char* cadena) const;
 };
 
 #endif

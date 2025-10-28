@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-// Constructor por defecto
+// constructores y destructor
 Album::Album()
     : idAlbum(0), nombre(nullptr), selloDisquero(nullptr), fechaLanzamiento(nullptr),
     duracionTotal(0.0f), portadaRuta(nullptr), puntuacion(0.0f),
@@ -14,7 +14,6 @@ Album::Album()
     }
 }
 
-// Constructor parametrizado
 Album::Album(int id, const char* nombre, const char* sello,
              const char* fecha, const char* ruta)
     : idAlbum(id), duracionTotal(0.0f), puntuacion(0.0f),
@@ -31,7 +30,6 @@ Album::Album(int id, const char* nombre, const char* sello,
     }
 }
 
-// Constructor de copia
 Album::Album(const Album& otro)
     : idAlbum(otro.idAlbum), duracionTotal(otro.duracionTotal),
     puntuacion(otro.puntuacion), cantidadCanciones(otro.cantidadCanciones),
@@ -52,7 +50,6 @@ Album::Album(const Album& otro)
     copiarGeneros(otro.generos, otro.cantidadGeneros);
 }
 
-// Destructor
 Album::~Album() {
     liberarCadena(nombre);
     liberarCadena(selloDisquero);
@@ -62,7 +59,7 @@ Album::~Album() {
     liberarGeneros();
 }
 
-// Getters
+// getters
 int Album::getIdAlbum() const { return idAlbum; }
 const char* Album::getNombre() const { return nombre; }
 const char* Album::getSelloDisquero() const { return selloDisquero; }
@@ -75,7 +72,7 @@ float Album::getPuntuacion() const { return puntuacion; }
 Cancion** Album::getCanciones() const { return canciones; }
 int Album::getCantidadCanciones() const { return cantidadCanciones; }
 
-// Setters
+// setters
 void Album::setIdAlbum(int id) { this->idAlbum = id; }
 
 void Album::setNombre(const char* nombre) {
@@ -110,7 +107,7 @@ void Album::setCanciones(Cancion** canciones, int cantidad) {
     copiarCanciones(canciones, cantidad);
 }
 
-// Agregar cancionn al album
+// métodos funcionales
 void Album::agregarCancion(Cancion* cancion) {
     if (cantidadCanciones >= capacidadCanciones) {
         expandirCapacidadCanciones();
@@ -119,13 +116,11 @@ void Album::agregarCancion(Cancion* cancion) {
     calcularDuracion();
 }
 
-// Agregar generoo (maximo 4)
 bool Album::agregarGenero(const char* genero) {
     if (cantidadGeneros >= MAX_GENEROS) {
         return false;
     }
 
-    // Verificar que no exista el genero
     for (int i = 0; i < cantidadGeneros; i++) {
         if (compararCadenas(generos[i], genero)) {
             return false;
@@ -136,7 +131,6 @@ bool Album::agregarGenero(const char* genero) {
     return true;
 }
 
-// Calcular duracion total del album
 void Album::calcularDuracion() {
     duracionTotal = 0.0f;
     for (int i = 0; i < cantidadCanciones; i++) {
@@ -144,12 +138,11 @@ void Album::calcularDuracion() {
     }
 }
 
-// Mostrar ruta de la portada
 void Album::mostrarPortada() const {
     cout << "Portada: " << portadaRuta << endl;
 }
 
-// Sobrecarga operador de asignacion
+// operador
 Album& Album::operator=(const Album& otro) {
     if (this != &otro) {
         liberarCadena(nombre);
@@ -183,7 +176,7 @@ Album& Album::operator=(const Album& otro) {
     return *this;
 }
 
-// Metodos privados auxiliares
+// métodos privados - gestión de canciones
 void Album::expandirCapacidadCanciones() {
     int nuevaCapacidad = capacidadCanciones * 2;
     Cancion** nuevoArreglo = new Cancion*[nuevaCapacidad];
@@ -213,6 +206,7 @@ void Album::liberarCanciones() {
     }
 }
 
+// métodos privados - gestión de géneros
 void Album::copiarGeneros(char** origen, int cantidad) {
     for (int i = 0; i < cantidad; i++) {
         generos[i] = copiarCadena(origen[i]);
@@ -229,7 +223,7 @@ void Album::liberarGeneros() {
     }
 }
 
-// Funciones auxiliares para manejo de cadenas
+// métodos privados - gestión de cadenas
 char* Album::copiarCadena(const char* origen) {
     if (origen == nullptr) return nullptr;
 

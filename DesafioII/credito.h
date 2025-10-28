@@ -4,11 +4,6 @@
 #include <string>
 using namespace std;
 
-/*
- * Clase Credito: Representa los creditos de una cancion
- * Almacena informacion de productores, musicos y compositores
- */
-
 class Credito {
 private:
     string nombre;
@@ -18,27 +13,26 @@ private:
     int idCancion;
 
 public:
-    // Constructores
+    // constructores
     Credito();
     Credito(const string& nombre, const string& apellido,
             const string& tipo, const string& codigo);
 
-    // Getters
+    // getters
     string getNombre() const;
     string getApellido() const;
     string getTipo() const;
     string getCodigoAfiliacion() const;
     int getIdCancion() const;
 
-
-    // Setters
+    // setters
     void setNombre(const string& nombre);
     void setApellido(const string& apellido);
     void setTipo(const string& tipo);
     void setCodigoAfiliacion(const string& codigo);
     void setIdCancion(int id);
 
-    // Metodo para mostrar informacion del credito
+    // métodos de visualización
     void mostrarCredito() const;
 };
 

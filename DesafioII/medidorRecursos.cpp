@@ -1,6 +1,7 @@
 #include "MedidorRecursos.h"
 #include <iostream>
 
+// constructor y destructor
 MedidorRecursos::MedidorRecursos() {
     capacidad = 6;
     totalRegistros = 0;
@@ -17,6 +18,7 @@ MedidorRecursos::~MedidorRecursos() {
     delete[] conteos;
 }
 
+// gestión de tiempo
 void MedidorRecursos::iniciarTiempo() {
     tiempoInicio = high_resolution_clock::now();
 }
@@ -25,19 +27,13 @@ void MedidorRecursos::detenerTiempo() {
     tiempoFin = high_resolution_clock::now();
 }
 
+// registro de métricas
 void MedidorRecursos::registrarMemoria(size_t bytes) {
     memoriaKB = static_cast<double>(bytes) / 1024.0;
 }
 
 void MedidorRecursos::incrementarIteracion() {
     contadorIteraciones++;
-}
-
-int MedidorRecursos::buscarIndiceEtiqueta(const string& etiqueta) const {
-    for (int i = 0; i < totalRegistros; i++) {
-        if (nombres[i] == etiqueta) return i;
-    }
-    return -1;
 }
 
 void MedidorRecursos::registrarLlamada(const string& etiqueta) {
@@ -55,6 +51,7 @@ void MedidorRecursos::registrarLlamada(const string& etiqueta) {
     totalRegistros++;
 }
 
+// gestión de datos
 void MedidorRecursos::ampliarCapacidad() {
     int nuevaCapacidad = capacidad * 2;
 
@@ -81,6 +78,7 @@ void MedidorRecursos::reiniciar() {
     memoriaKB = 0;
 }
 
+// visualización de resultados
 void MedidorRecursos::mostrarResumen(const string& titulo) const {
     auto duracion = duration_cast<nanoseconds>(tiempoFin - tiempoInicio);
     double tiempoSegundos = duracion.count() / 1'000'000'000.0;
@@ -101,6 +99,7 @@ void MedidorRecursos::mostrarConteoLlamadas() const {
     cout << "-----------------------------\n";
 }
 
+// getters
 int MedidorRecursos::getTotalRegistros() const {
     return totalRegistros;
 }
@@ -122,10 +121,18 @@ int MedidorRecursos::getConteoEtiqueta(const string& etiqueta) const {
     }
 }
 
+// setters
 void MedidorRecursos::setMemoriaKB(double nuevaMemoria) {
     memoriaKB = nuevaMemoria;
 }
 
 void MedidorRecursos::setContadorIteraciones(int nuevoContador) {
     contadorIteraciones = nuevoContador;
+}
+
+int MedidorRecursos::buscarIndiceEtiqueta(const string& etiqueta) const {
+    for (int i = 0; i < totalRegistros; i++) {
+        if (nombres[i] == etiqueta) return i;
+    }
+    return -1;
 }

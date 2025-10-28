@@ -2,6 +2,7 @@
 #include <random>
 #include <iostream>
 
+// constructores
 Anuncio::Anuncio() {
     texto = "Sin texto";
     categoria = "C";
@@ -16,11 +17,13 @@ Anuncio::Anuncio(string _texto, string _categoria) {
     mostrado = false;
 }
 
+// getters
 string Anuncio::getTexto() const { return texto; }
 string Anuncio::getCategoria() const { return categoria; }
 int Anuncio::getPrioridad() const { return prioridad; }
 bool Anuncio::getMostrado() const { return mostrado; }
 
+// setters
 void Anuncio::setTexto(string nuevoTexto) { texto = nuevoTexto; }
 void Anuncio::setCategoria(string nuevaCategoria) {
     categoria = nuevaCategoria;
@@ -28,6 +31,7 @@ void Anuncio::setCategoria(string nuevaCategoria) {
 }
 void Anuncio::setMostrado(bool estado) { mostrado = estado; }
 
+// métodos funcionales
 void Anuncio::asignarPrioridad() {
     if (categoria == "AAA") prioridad = 3;
     else if (categoria == "B") prioridad = 2;

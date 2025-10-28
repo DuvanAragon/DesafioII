@@ -1,19 +1,16 @@
 #include "Cancion.h"
 #include <iostream>
 
-// Constructor por defecto
+// constructores y destructor
 Cancion::Cancion()
     : idCancion(0), nombre(""), duracion(0.0f), ruta128(""), ruta320(""),
     reproducciones(0), cantidadCreditos(0), capacidadCreditos(5)
 {
     creditos = new Credito*[capacidadCreditos];
-
-    // Inicializar punteros a nullptr para evitar errores
     for (int i = 0; i < capacidadCreditos; i++)
         creditos[i] = nullptr;
 }
 
-// Constructor parametrizado
 Cancion::Cancion(int id, const string& nombre, float duracion,
                  const string& r128, const string& r320)
     : idCancion(id), nombre(nombre), duracion(duracion),
@@ -21,12 +18,10 @@ Cancion::Cancion(int id, const string& nombre, float duracion,
     cantidadCreditos(0), capacidadCreditos(5)
 {
     creditos = new Credito*[capacidadCreditos];
-
     for (int i = 0; i < capacidadCreditos; i++)
         creditos[i] = nullptr;
 }
 
-// Constructor de copia
 Cancion::Cancion(const Cancion& otra)
     : idCancion(otra.idCancion), nombre(otra.nombre), duracion(otra.duracion),
     ruta128(otra.ruta128), ruta320(otra.ruta320),
@@ -34,20 +29,17 @@ Cancion::Cancion(const Cancion& otra)
     capacidadCreditos(otra.capacidadCreditos)
 {
     creditos = new Credito*[capacidadCreditos];
-
-    // Inicializar primero
     for (int i = 0; i < capacidadCreditos; i++)
         creditos[i] = nullptr;
 
     copiarCreditos(otra.creditos, otra.cantidadCreditos);
 }
 
-// Destructor
 Cancion::~Cancion() {
     liberarCreditos();
 }
 
-// Getters
+// getters
 int Cancion::getIdCancion() const { return idCancion; }
 string Cancion::getNombre() const { return nombre; }
 float Cancion::getDuracion() const { return duracion; }
@@ -57,7 +49,7 @@ int Cancion::getReproducciones() const { return reproducciones; }
 Credito** Cancion::getCreditos() const { return creditos; }
 int Cancion::getCantidadCreditos() const { return cantidadCreditos; }
 
-// Setters
+// setters
 void Cancion::setIdCancion(int id) { idCancion = id; }
 void Cancion::setNombre(const string& nombre) { this->nombre = nombre; }
 void Cancion::setDuracion(float duracion) { this->duracion = duracion; }
@@ -77,6 +69,7 @@ void Cancion::setCreditos(Credito** nuevosCreditos, int cantidad) {
     copiarCreditos(nuevosCreditos, cantidad);
 }
 
+// métodos funcionales
 bool Cancion::validarID() const {
     return idCancion >= 100000000 && idCancion <= 999999999;
 }
@@ -86,11 +79,6 @@ void Cancion::reproducir(const string& calidad) {
     std::cout << "Canción: " << nombre << std::endl;
     std::cout << "Duración: " << duracion << " segundos" << std::endl;
     std::cout << "Archivo: " << (calidad == "320" ? ruta320 : ruta128) << std::endl;
-}
-
-void Cancion::mostrarRutas() const {
-    std::cout << "Ruta 128 kbps: " << ruta128 << std::endl;
-    std::cout << "Ruta 320 kbps: " << ruta320 << std::endl;
 }
 
 void Cancion::incrementarReproduccion() {
@@ -104,6 +92,7 @@ void Cancion::agregarCredito(Credito* credito) {
     creditos[cantidadCreditos++] = credito;
 }
 
+// operador de asignación
 Cancion& Cancion::operator=(const Cancion& otra) {
     if (this != &otra) {
         liberarCreditos();
@@ -126,6 +115,20 @@ Cancion& Cancion::operator=(const Cancion& otra) {
     return *this;
 }
 
+// métodos de extracción de IDs
+int Cancion::getIdArtista() const {
+    return idCancion / 10000;
+}
+
+int Cancion::getIdAlbum() const {
+    return (idCancion % 10000) / 100;
+}
+
+int Cancion::getIdCancionIndividual() const {
+    return idCancion % 100;
+}
+
+// métodos auxiliares
 void Cancion::expandirCapacidadCreditos() {
     int nuevaCapacidad = capacidadCreditos * 2;
     Credito** nuevoArreglo = new Credito*[nuevaCapacidad];

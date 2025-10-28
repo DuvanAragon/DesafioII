@@ -2,14 +2,13 @@
 #include <iostream>
 using namespace std;
 
-// Constructor por defecto
+// constructores y destructor
 Artista::Artista()
     : idArtista(0), nombre(nullptr), edad(0), paisOrigen(nullptr),
     seguidores(0), posicionGlobal(0), cantidadAlbumes(0), capacidadAlbumes(5) {
     albumes = new Album*[capacidadAlbumes];
 }
 
-// Constructor parametrizado
 Artista::Artista(int id, const char* nombre, int edad, const char* pais,
                  int seguidores, int posicion)
     : idArtista(id), edad(edad), seguidores(seguidores),
@@ -19,7 +18,6 @@ Artista::Artista(int id, const char* nombre, int edad, const char* pais,
     albumes = new Album*[capacidadAlbumes];
 }
 
-// Constructor de copia
 Artista::Artista(const Artista& otro)
     : idArtista(otro.idArtista), edad(otro.edad), seguidores(otro.seguidores),
     posicionGlobal(otro.posicionGlobal), cantidadAlbumes(otro.cantidadAlbumes),
@@ -30,14 +28,13 @@ Artista::Artista(const Artista& otro)
     copiarAlbumes(otro.albumes, otro.cantidadAlbumes);
 }
 
-// Destructor
 Artista::~Artista() {
     liberarCadena(nombre);
     liberarCadena(paisOrigen);
     liberarAlbumes();
 }
 
-// Getters
+// getters
 int Artista::getIdArtista() const { return idArtista; }
 const char* Artista::getNombre() const { return nombre; }
 int Artista::getEdad() const { return edad; }
@@ -47,7 +44,7 @@ int Artista::getPosicionGlobal() const { return posicionGlobal; }
 Album** Artista::getAlbumes() const { return albumes; }
 int Artista::getCantidadAlbumes() const { return cantidadAlbumes; }
 
-// Setters
+// setters
 void Artista::setIdArtista(int id) { this->idArtista = id; }
 
 void Artista::setNombre(const char* nombre) {
@@ -74,7 +71,7 @@ void Artista::setAlbumes(Album** albumes, int cantidad) {
     copiarAlbumes(albumes, cantidad);
 }
 
-// Agregar albumm al catalogo
+// métodos funcionales
 void Artista::agregarAlbum(Album* album) {
     if (cantidadAlbumes >= capacidadAlbumes) {
         expandirCapacidadAlbumes();
@@ -82,7 +79,6 @@ void Artista::agregarAlbum(Album* album) {
     albumes[cantidadAlbumes++] = album;
 }
 
-// Mostrar informacion del artista
 void Artista::mostrarInformacion() const {
     cout << "\n=== INFORMACIÓN DEL ARTISTA ===" << endl;
     cout << "ID: " << idArtista << endl;
@@ -94,7 +90,6 @@ void Artista::mostrarInformacion() const {
     cout << "Cantidad de Álbumes: " << cantidadAlbumes << endl;
 }
 
-// Buscar cancion por ID en todos los albumes
 Cancion* Artista::buscarCancionPorId(int idCancion) const {
     for (int i = 0; i < cantidadAlbumes; i++) {
         Cancion** canciones = albumes[i]->getCanciones();
@@ -109,7 +104,7 @@ Cancion* Artista::buscarCancionPorId(int idCancion) const {
     return nullptr;
 }
 
-// Sobrecarga operador de asignacion
+// operador
 Artista& Artista::operator=(const Artista& otro) {
     if (this != &otro) {
         liberarCadena(nombre);
@@ -132,7 +127,7 @@ Artista& Artista::operator=(const Artista& otro) {
     return *this;
 }
 
-// Metodos privados auxiliares
+// métodos privados - gestión de álbumes
 void Artista::expandirCapacidadAlbumes() {
     int nuevaCapacidad = capacidadAlbumes * 2;
     Album** nuevoArreglo = new Album*[nuevaCapacidad];
@@ -162,7 +157,7 @@ void Artista::liberarAlbumes() {
     }
 }
 
-// Funciones auxiliares para manejo de cadenas
+// métodos privados - gestión de cadenas
 char* Artista::copiarCadena(const char* origen) {
     if (origen == nullptr) return nullptr;
 

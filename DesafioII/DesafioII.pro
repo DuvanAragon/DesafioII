@@ -8,15 +8,15 @@ CONFIG += c++17 cmdline
 
 SOURCES += \
         anuncios.cpp \
-        listafavoritos.cpp \
+        listaFavoritos.cpp \
         main.cpp \
         medidorRecursos.cpp \
         plataforma.cpp \
         credito.cpp \
         cancion.cpp \
         album.cpp \
+        sistemaReproduccion.cpp \
         usuario.cpp \
-        sistemareproduccion.cpp\
         artista.cpp
 
 # Default rules for deployment.
@@ -26,12 +26,12 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     anuncios.h \
-    listafavoritos.h \
+    listaFavoritos.h \
     medidorRecursos.h \
     plataforma.h\
     credito.h \
     cancion.h \
     album.h \
+    sistemaReproduccion.h \
     usuario.h\
-    sistemareproduccion.h\
     artista.h

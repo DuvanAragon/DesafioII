@@ -3,36 +3,36 @@
 
 #include "Cancion.h"
 
-/*
- * Clase Album: Representa un álbum musical
- * Gestiona canciones, géneros y metadatos del álbum
- */
 class Album {
 private:
+    // datos básicos del álbum
     int idAlbum;
     char* nombre;
     char* selloDisquero;
     char* fechaLanzamiento;
-    float duracionTotal; // en segundos
-    char* portadaRuta; // ruta a imagen PNG
-    char** generos; // Arreglo de char* para maximo 4 generos
-    float puntuacion; // 1 a 10
+    float duracionTotal;
+    char* portadaRuta;
+    float puntuacion;
 
-    Cancion** canciones; // Arreglo dinamico de canciones
-    int cantidadCanciones;
-    int capacidadCanciones;
+    // gestión de géneros
+    char** generos;
     int cantidadGeneros;
     static const int MAX_GENEROS = 4;
 
+    // gestión de canciones
+    Cancion** canciones;
+    int cantidadCanciones;
+    int capacidadCanciones;
+
 public:
-    // Constructores
+    // constructores y destructor
     Album();
     Album(int id, const char* nombre, const char* sello,
           const char* fecha, const char* ruta);
-    Album(const Album& otro); // Constructor de copia
-    ~Album(); // Destructor
+    Album(const Album& otro);
+    ~Album();
 
-    // Getters
+    // getters
     int getIdAlbum() const;
     const char* getNombre() const;
     const char* getSelloDisquero() const;
@@ -45,7 +45,7 @@ public:
     Cancion** getCanciones() const;
     int getCantidadCanciones() const;
 
-    // Setters
+    // setters
     void setIdAlbum(int id);
     void setNombre(const char* nombre);
     void setSelloDisquero(const char* sello);
@@ -55,23 +55,26 @@ public:
     void setPuntuacion(float puntuacion);
     void setCanciones(Cancion** canciones, int cantidad);
 
-    // Metodos funcionales
+    // métodos funcionales
     void agregarCancion(Cancion* cancion);
     bool agregarGenero(const char* genero);
     void calcularDuracion();
     void mostrarPortada() const;
 
-    // Sobrecarga de operador
+    // operador
     Album& operator=(const Album& otro);
 
 private:
+    // gestión de canciones
     void expandirCapacidadCanciones();
     void copiarCanciones(Cancion** origen, int cantidad);
     void liberarCanciones();
+
+    // gestión de géneros
     void copiarGeneros(char** origen, int cantidad);
     void liberarGeneros();
 
-    // Funciones auxiliares para manejo de cadenas
+    // gestión de cadenas
     char* copiarCadena(const char* origen);
     void liberarCadena(char*& cadena);
     int longitudCadena(const char* cadena) const;

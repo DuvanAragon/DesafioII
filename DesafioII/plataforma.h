@@ -5,125 +5,117 @@
 #include <fstream>
 #include <string>
 #include <random>
-
 #include "cancion.h"
-#include "credito.h"
 #include "album.h"
+#include "credito.h"
 #include "artista.h"
-#include "Usuario.h"
+#include "usuario.h"
 #include "Anuncios.h"
+
 using namespace std;
 
 class Plataforma {
 private:
-    // ====== CANCIONES (INDEXADAS) ======
+    // estructuras de datos para indexación
+    int capacidadCanciones;
+    int cantidadCanciones;
     int* idsCanciones;
     string* lineasCanciones;
-    int cantidadCanciones;
-    int capacidadCanciones;
 
-    // ====== CREDITOS (INDEXADOS) ======
+    int capacidadCreditos;
+    int cantidadCreditos;
     int* idCancionesCred;
     string* lineasCreditos;
-    int cantidadCreditos;
-    int capacidadCreditos;
 
-    // ====== ALBUMES (INDEXADOS) ======
+    int capacidadAlbumes;
+    int cantidadAlbumes;
     int* idArtistas;
     int* idAlbumes;
     string* lineasAlbumes;
-    int cantidadAlbumes;
-    int capacidadAlbumes;
 
-    // ====== ARTISTAS (CARGA COMPLETA) ======
-    Artista** artistas;
-    int cantidadArtistas;
+    // arreglos dinámicos de objetos
     int capacidadArtistas;
+    int cantidadArtistas;
+    Artista** artistas;
 
-    // ====== USUARIOS (CARGA COMPLETA) ======
-    Usuario** usuarios;
-    int cantidadUsuarios;
     int capacidadUsuarios;
+    int cantidadUsuarios;
+    Usuario** usuarios;
 
-    // ====== ANUNCIOS (CARGA COMPLETA) ======
-    Anuncio** anuncios;
-    int cantidadAnuncios;
     int capacidadAnuncios;
-
-    // Métodos auxiliares para parsear
-    Cancion* parsearCancion(const string& linea);
-    Credito* parsearCredito(const string& linea);
-    Album* parsearAlbum(const string& linea);
-
+    int cantidadAnuncios;
+    Anuncio** anuncios;
 
 public:
+    // constructor y destructor
     Plataforma();
     ~Plataforma();
 
-    // ==== MÉTODOS CANCIONES ====
+    // canciones
     void indexarCanciones(const string& ruta);
+    void ordenarCancionesPorId();
+    void quickSortCanciones(int izq, int der);
+    int particionCanciones(int izq, int der);
     Cancion* cargarCancion(int id);
-    int getCantidadCanciones() { return cantidadCanciones; }
+    Cancion* cargarCancion(int id, int& iteraciones);
+    Cancion* parsearCancion(const string& linea);
+    void guardarCanciones(const string& ruta);
+    void actualizarLineaCancion(int idCancion);
+    void agregarCancion(Cancion* cancion);
+    bool eliminarCancion(int idCancion);
+    Cancion* seleccionarCancionAleatoria(int ultimoID);
 
-    // ==== MÉTODOS CREDITOS ====
-    void indexarCreditos(const string& ruta);
-    Credito* cargarCredito(int idCancion);
-    int getCantidadCreditos() { return cantidadCreditos; }
-
-    // ==== MÉTODOS ALBUMES ====
+    // álbumes
     void indexarAlbumes(const string& ruta);
+    void ordenarAlbumesPorId();
+    void quickSortAlbumes(int izq, int der);
+    int particionAlbumes(int izq, int der);
+    long long combinarIds(int idArtista, int idAlbum);
     Album* cargarAlbum(int idArtista, int idAlbum);
-    int getCantidadAlbumes() { return cantidadAlbumes; }
+    Album* cargarAlbum(int idArtista, int idAlbum, int& iteraciones);
+    Album* parsearAlbum(const string& linea);
+    void guardarAlbumes(const string& ruta);
+    void actualizarLineaAlbum(int idArtista, int idAlbum);
+    void agregarAlbum(int idArtista, Album* album);
 
-    // ==== MÉTODOS ARTISTAS ====
+    // créditos
+    void indexarCreditos(const string& ruta);
+    void ordenarCreditosPorId();
+    void quickSortCreditos(int izq, int der);
+    int particionCreditos(int izq, int der);
+    Credito* cargarCredito(int idCancion);
+    Credito* cargarCredito(int idCancion, int& iteraciones);
+    Credito* parsearCredito(const string& linea);
+    void guardarCreditos(const string& ruta);
+    void actualizarLineaCredito(int idCancion);
+
+    // artistas
     void cargarArtistas(const string& ruta);
     Artista* buscarArtista(int idArtista);
-    int getCantidadArtistas() { return cantidadArtistas; }
+    void guardarArtistas(const string& ruta);
+    void agregarArtista(Artista* artista);
+    bool eliminarArtista(int idArtista);
 
-    // ==== MÉTODOS USUARIOS ====
+    // usuarios
     void cargarUsuarios(const string& ruta);
     Usuario* buscarUsuario(const string& nickname);
-    int getCantidadUsuarios() { return cantidadUsuarios; }
+    void guardarUsuarios(const string& ruta);
+    void agregarUsuario(Usuario* usuario);
+    bool eliminarUsuario(const string& nickname);
+    Usuario* login(const string& nickname);
 
-    // ==== MÉTODOS ANUNCIOS ====
+    // anuncios
     void cargarAnuncios(const string& ruta);
     Anuncio* obtenerAnuncioAleatorio(int ultimoIndice);
-    int getCantidadAnuncios() { return cantidadAnuncios; }
-    Anuncio* getAnuncio(int i) { return (i >= 0 && i < cantidadAnuncios) ? anuncios[i] : nullptr; }
-
-    // ==== MÉTODOS PERSISTENCIA LISTAS ====
-    void cargarListasFavoritosDesdeArchivo(const string& ruta);
-    void guardarListasFavoritosEnArchivo(const string& ruta);
-
-    // En la sección public de la clase Plataforma:
-
-    // ==== MÉTODOS DE GUARDADO ====
-    void guardarCanciones(const string& ruta);
-    void guardarCreditos(const string& ruta);
-    void guardarAlbumes(const string& ruta);
-    void guardarArtistas(const string& ruta);
-    void guardarUsuarios(const string& ruta);
     void guardarAnuncios(const string& ruta);
 
-    // ==== MÉTODOS DE ACTUALIZACIÓN (para datos indexados) ====
-    void actualizarLineaCancion(int idCancion);
-    void actualizarLineaCredito(int idCancion);
-    void actualizarLineaAlbum(int idArtista, int idAlbum);
+    // getters para anuncios
+    Anuncio** getListaAnuncios() const { return anuncios; }
+    int getTotalAnuncios() const { return cantidadAnuncios; }
 
-    // ==== MÉTODOS DE AGREGADO ====
-    void agregarCancion(Cancion* cancion);
-    void agregarAlbum(int idArtista, Album* album);
-    void agregarArtista(Artista* artista);
-    void agregarUsuario(Usuario* usuario);
-
-    // ==== MÉTODOS DE ELIMINACIÓN ====
-    bool eliminarCancion(int idCancion);
-    bool eliminarArtista(int idArtista);
-    bool eliminarUsuario(const string& nickname);
-
-    // ==== MÉTODO DE LOGIN ====
-    Usuario* login(const string& nickname);
-    Cancion* seleccionarCancionAleatoria(int ultimoID = -1);
+    // listas de favoritos
+    void cargarListasFavoritosDesdeArchivo(const string& ruta);
+    void guardarListasFavoritosEnArchivo(const string& ruta);
 
 };
 
